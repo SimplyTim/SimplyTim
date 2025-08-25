@@ -62,7 +62,7 @@ A **PWA** built using Angular and Flask to encourage blood donations. JAM stack 
 ## 🎓 Education
 
 - **M.Sc. in Data Science**, University of British Columbia, 2025  
-- **B.Sc. in Computer Science (First Class Honours)**, University of the West Indies, 2021  
+- **B.Sc. in Computer Science**, University of the West Indies, 2021  
 
 ---
 
