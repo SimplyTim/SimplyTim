@@ -1,7 +1,0 @@
----
-title: "Timothy Singh DSCI 521 - Lab 2"
----
-
-This is my submission for lab 2, using a Quarto website 😀! 
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.

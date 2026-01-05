@@ -1,0 +1,81 @@
+{
+  "skills": {
+    "Programming Languages": [
+      { "name": "Python", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { "name": "SQL", "icon": "https://www.svgrepo.com/show/331760/sql-database-generic.svg" },
+      { "name": "Java", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+      { "name": "C++", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
+      { "name": "JavaScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+      { "name": "C#", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" },
+      { "name": "Bash", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" }
+    ],
+    "Data Science & ML": [
+      { "name": "Pandas", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
+      { "name": "scikit-learn", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" },
+      { "name": "TensorFlow", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+      { "name": "PyTorch", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
+      { "name": "Keras", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" },
+      { "name": "XGBoost", "icon": "https://upload.wikimedia.org/wikipedia/commons/6/69/XGBoost_logo.png" }
+    ],
+    "Cloud & DevOps": [
+      { "name": "AWS", "icon": "https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" },
+      { "name": "Azure", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
+      { "name": "Docker", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+      { "name": "GitHub Actions", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+      { "name": "Linux", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" }
+    ]
+  },
+  "projects": [
+    {
+      "title": "MTR-Framework",
+      "desc": "Python package to measure and track carbon emissions of code during runtime via real-time API calls and hardware metrics. Built as a UBC Capstone project with ALS Geoanalytics.",
+      "url": "#",
+      "image": "https://geographical.co.uk/wp-content/uploads/carbon-dioxide-emissions-title.jpg"
+    },
+    {
+      "title": "DSResuMatch",
+      "desc": "Tool for analyzing resumes vs job descriptions, scoring based on keyword relevance. Applies NLP for section extraction and matching logic.",
+      "url": "https://github.com/UBC-MDS/dsresumatch",
+      "image": "https://raw.githubusercontent.com/UBC-MDS/dsresumatch/refs/heads/project_logo/docs/logo.png"
+    },
+    {
+      "title": "NIH Chest X-ray Classifier",
+      "desc": "Built a deep learning pipeline (CNN) to classify thoracic diseases from X-ray images. Created during the UBC Medicine Datathon 2025.",
+      "url": "https://github.com/SimplyTim/NIH-Chest-XRay-Classifier",
+      "image": "https://media.post.rvohealth.io/wp-content/uploads/sites/3/2022/08/heart-chest-x-ray-thumb.png"
+    },
+    {
+      "title": "Wine Quality Predictor",
+      "desc": "Deployed ML classification model to predict wine quality using physiochemical properties. Includes feature engineering, data pipelines, and cross-validation.",
+      "url": "https://github.com/UBC-MDS/wine_quality_predictor_group1",
+      "image": "https://raw.githubusercontent.com/Masterx-AI/Project_Wine_Quality_Investigation/main/wq.jpg"
+    },
+    {
+      "title": "Poke-Dashboard",
+      "desc": "Fun Shiny dashboard built in R, acting as a fully interactive Pokédex for all Pokémon up to Gen 8. Focus on data visualization and UI design.",
+      "url": "https://poke-dashboard.onrender.com/",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/13145319/Screen_Shot_2015-04-09_at_12.52.21_PM.0.0.1487799402.png"
+    },
+    {
+      "title": "Credit Card Default Predictor",
+      "desc": "ML pipeline for classifying high-risk customers. Includes preprocessing, feature selection, model tuning, and evaluation.",
+      "url": "https://github.com/SimplyTim/Credit-Card-Default-Predictor",
+      "image": "https://cdn2.hubspot.net/hub/7379058/hubfs/Accepting%20a%20credit%20card%20at%20a%20terminal.png"
+    },
+    {
+      "title": "Project Bloodline",
+      "desc": "A PWA built using Angular and Flask to encourage blood donations. JAM stack application with REST APIs, login/auth, and mobile-ready design.",
+      "url": "https://project-bloodline.web.app/",
+      "image": "https://www.personalabs.com/wp-content/uploads/2023/09/close-up-unrecognizable-male-donor-donating-blood-squeezing-stress-ball-copy-space.jpg"
+    }
+  ],
+  "education": [
+    { "degree": "M.Sc. in Data Science", "institution": "University of British Columbia", "year": 2025 },
+    { "degree": "B.Sc. in Computer Science", "institution": "University of the West Indies", "year": 2021 }
+  ],
+  "contact": {
+    "email": "timothysingh@live.com",
+    "linkedin": "https://linkedin.com/in/timothy-singh-a1255b121",
+    "github": "https://github.com/SimplyTim"
+  }
+}

@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .blob { position:absolute;width:120%;height:120%;border-radius:50%;filter:blur(3rem);opacity:.9 }
+    .blob-a{animation:blobA 20s linear infinite}
+    .blob-b{animation:blobB 15s linear infinite}
+
+    @keyframes blobA {
+      0%{transform:translate(0,0)} 50%{transform:translate(80px,40px)} 100%{transform:translate(0,0)}
+    }
+    @keyframes blobB {
+      0%{transform:translate(0,0)} 50%{transform:translate(-80px,-40px)} 100%{transform:translate(0,0)}
+    }
+
+    .tab-active { background: rgba(255,255,255,.2) }
+
+    .project-card {
+      background: rgba(255,255,255,.05);
+      border-radius: 14px;
+      padding: 1rem;
+      cursor: pointer;
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 14px 35px rgba(0,0,0,.45);
+    }
+
+    .project-thumb {
+      height: 140px;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .skill-chip {
+      display:flex;
+      align-items:center;
+      gap:.75rem;
+      padding:.5rem .75rem;
+      background: rgba(255,255,255,.05);
+      border-radius:999px;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: none;
+      transition: opacity .5s ease, transform .5s ease;
+    }
+
+    h1, h2, h3 {
+      letter-spacing: -0.02em;
+    }
+  </style>
+</head>
+
+<body class="font-['Satoshi'] h-screen w-screen overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+
+<!-- Animated background -->
+<div class="absolute inset-0 overflow-hidden pointer-events-none">
+  <div class="blob blob-a -top-1/2 -left-1/2 bg-indigo-500/30"></div>
+  <div class="blob blob-b -bottom-1/2 -right-1/2 bg-pink-500/30"></div>
+</div>
+
+<div class="relative z-10 h-full flex flex-col pointer-events-auto">
+
+<header class="p-4 flex gap-2 justify-end">
+  <button class="tab-btn px-4 py-1.5 rounded-full bg-white/10 hover:bg-white/20 transition" data-tab="home">Home</button>
+  <button class="tab-btn px-4 py-1.5 rounded-full bg-white/10 hover:bg-white/20 transition" data-tab="skills">Skills</button>
+  <button class="tab-btn px-4 py-1.5 rounded-full bg-white/10 hover:bg-white/20 transition" data-tab="projects">Projects</button>
+  <button class="tab-btn px-4 py-1.5 rounded-full bg-white/10 hover:bg-white/20 transition" data-tab="contact">Contact</button>
+</header>
+
+<main class="flex-1 overflow-auto p-8 space-y-5">
+
+<!-- HOME -->
+<section id="home" class="tab">
+  <h1 class="text-5xl font-bold mb-4">Hi, I'm Tim</h1>
+  <p class="text-slate-300 max-w-xl">
+    Data scientist and developer turning data into actionable insights. I focus on applied machine learning, production-ready tooling, and clean system design, with strong IT skills and project management know-how to bring complex solutions to life efficiently.
+  </p>
+
+  <!-- HOME BUTTONS -->
+  <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl">
+    <button class="project-card text-left" data-jump="skills">
+      <h3 class="font-semibold text-lg">Skills</h3>
+      <p class="text-slate-300 text-sm">Tech stack and tools</p>
+    </button>
+
+    <button class="project-card text-left" data-jump="projects">
+      <h3 class="font-semibold text-lg">Projects</h3>
+      <p class="text-slate-300 text-sm">Work Samples</p>
+    </button>
+
+    <button class="project-card text-left" data-jump="contact">
+      <h3 class="font-semibold text-lg">Contact</h3>
+      <p class="text-slate-300 text-sm">Get in touch</p>
+    </button>
+  </div>
+
+  <!-- Download Resume Button (Separate Row) -->
+  <div class="mt-12 max-w-5xl">
+    <a
+      href="/resume.pdf"
+      download
+      class="project-card text-center px-6 py-4 inline-block bg-indigo-600 hover:bg-indigo-500 transition"
+    >
+      <h3 class="font-semibold text-lg">Download Resume</h3>
+    </a>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="tab hidden pt-4">
+  <h2 class="text-3xl font-semibold mb-4 mt-2">Skills</h2>
+  <div id="skills-container" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="tab hidden pt-4">
+  <h2 class="text-3xl font-semibold mb-4 mt-2">Projects</h2>
+  <div id="projects-container" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="tab hidden">
+  <h2 class="text-3xl font-semibold mb-6">Contact</h2>
+  <p class="mb-4 text-slate-300">Please feel free to reach out to me!</p>
+
+  <div class="flex flex-col sm:flex-row gap-4">
+
+    <!-- Email Me Button -->
+    <a
+      href="mailto:timothysingh@live.com"
+      class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg text-center font-semibold transition flex items-center gap-2 justify-center"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m8 4H8m4-8H8m0 0L3 7v10l5-3 5 3V7z" />
+      </svg>
+      Email Me
+    </a>
+
+    <!-- LinkedIn Button -->
+    <a
+      href="https://www.linkedin.com/in/timothy-singh-a1255b121/"
+      target="_blank"
+      class="px-6 py-3 bg-blue-700 hover:bg-blue-600 text-white rounded-lg text-center font-semibold transition flex items-center gap-2 justify-center"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.3c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.3h-3v-4.5c0-1.08-.02-2.46-1.5-2.46s-1.73 1.17-1.73 2.38v4.58h-3v-9h2.88v1.23h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v5.74z"/>
+      </svg>
+      LinkedIn
+    </a>
+
+    <!-- GitHub Button -->
+    <a
+      href="https://github.com/SimplyTim"
+      target="_blank"
+      class="px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg text-center font-semibold transition flex items-center gap-2 justify-center"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.23c-3.338.724-4.033-1.415-4.033-1.415-.546-1.387-1.333-1.756-1.333-1.756-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.304.762-1.604-2.665-.3-5.467-1.334-5.467-5.933 0-1.31.465-2.38 1.235-3.22-.123-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.287-1.552 3.292-1.23 3.292-1.23.655 1.653.243 2.873.12 3.176.77.84 1.234 1.91 1.234 3.22 0 4.61-2.807 5.63-5.479 5.922.43.37.823 1.096.823 2.21v3.293c0 .319.218.694.825.576 4.765-1.588 8.2-6.085 8.2-11.386 0-6.627-5.373-12-12-12z"/>
+      </svg>
+      GitHub
+    </a>
+
+  </div>
+</section>
+
+</main>
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="fixed inset-0 hidden flex items-center justify-center bg-black/70" style="z-index: 9999">
+  <div class="bg-slate-900 p-6 rounded-xl max-w-xl w-full relative">
+    <button id="modal-close" class="absolute top-2 right-3">✕</button>
+    <div id="modal-thumb" class="project-thumb mb-4"></div>
+    <h3 id="modal-title" class="text-xl font-semibold"></h3>
+    <p id="modal-desc" class="text-slate-300 mt-2"></p>
+    <a id="modal-link" target="_blank" class="inline-block mt-4 px-4 py-2 bg-indigo-600 rounded">Visit</a>
+  </div>
+</div>
+
+<script>
+/* ------------------ TAB LOGIC ------------------ */
+const tabs = document.querySelectorAll('.tab');
+const buttons = document.querySelectorAll('.tab-btn');
+
+buttons.forEach(btn => {
+  btn.onclick = () => {
+    tabs.forEach(t => t.classList.add('hidden'));
+    document.getElementById(btn.dataset.tab).classList.remove('hidden');
+    buttons.forEach(b => b.classList.remove('tab-active'));
+    btn.classList.add('tab-active');
+  };
+});
+buttons[0].click();
+
+/* Home card navigation */
+document.querySelectorAll('[data-jump]').forEach(btn => {
+  btn.onclick = () => {
+    document.querySelector(`[data-tab="${btn.dataset.jump}"]`).click();
+  };
+});
+
+/* ------------------ MODAL ------------------ */
+const modal = document.getElementById('modal');
+const closeModal = () => modal.classList.add('hidden');
+document.getElementById('modal-close').onclick = closeModal;
+modal.onclick = e => e.target === modal && closeModal();
+
+/* ------------------ DATA LOADING ------------------ */
+fetch('data.json')
+  .then(r => r.json())
+  .then(data => {
+    const skillsEl = document.getElementById('skills-container');
+    const projectsEl = document.getElementById('projects-container');
+
+    /* Skills */
+    Object.entries(data.skills).forEach(([cat, items]) => {
+      skillsEl.innerHTML += `
+        <div class="project-card reveal">
+          <h3 class="font-semibold mb-3">${cat}</h3>
+          <div class="flex flex-col gap-2">
+            ${items.map(s => `<div class="skill-chip"><img src="${s.icon}" width="24"/>${s.name}</div>`).join('')}
+          </div>
+        </div>`;
+    });
+
+    /* Projects */
+    data.projects.forEach(p => {
+      const card = document.createElement('article');
+      card.className = 'project-card reveal';
+      card.innerHTML = `
+        <div class="project-thumb" style="background-image:url('${p.image}')"></div>
+        <h3 class="mt-3 font-semibold">${p.title}</h3>
+        <p class="text-sm text-slate-300 mt-1">${p.desc}</p>`;
+      card.onclick = () => {
+        modal.classList.remove('hidden');
+        document.getElementById('modal-title').textContent = p.title;
+        document.getElementById('modal-desc').textContent = p.desc;
+        document.getElementById('modal-thumb').style.backgroundImage = `url('${p.image}')`;
+        document.getElementById('modal-link').href = p.url;
+      };
+      projectsEl.appendChild(card);
+    });
+
+    /* Reveal animation */
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('show');
+          observer.unobserve(e.target);
+        }
+      });
+    });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  });
+</script>
+</body>
+</html>
