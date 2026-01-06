@@ -186,15 +186,30 @@
 </div>
 
 <!-- MODAL -->
-<div id="modal" class="fixed inset-0 hidden flex items-center justify-center bg-black/70" style="z-index: 9999">
-  <div class="bg-slate-900 p-6 rounded-xl max-w-xl w-full relative">
+<div id="modal"
+  class="fixed inset-0 hidden flex items-center justify-center bg-black/70"
+  style="z-index: 9999">
+  
+  <!-- ADD onclick stopPropagation HERE -->
+  <div
+    class="bg-slate-900 p-6 rounded-xl max-w-xl w-full relative"
+    onclick="event.stopPropagation()"
+  >
     <button id="modal-close" class="absolute top-2 right-3">✕</button>
     <div id="modal-thumb" class="project-thumb mb-4"></div>
     <h3 id="modal-title" class="text-xl font-semibold"></h3>
     <p id="modal-desc" class="text-slate-300 mt-2"></p>
-    <a id="modal-link" target="_blank" class="inline-block mt-4 px-4 py-2 bg-indigo-600 rounded">Visit</a>
+    <a
+      id="modal-link"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block mt-4 px-4 py-2 bg-indigo-600 rounded"
+    >
+      Visit
+    </a>
   </div>
 </div>
+
 
 <script>
 /* ------------------ TAB LOGIC ------------------ */
@@ -252,11 +267,37 @@ fetch('data.json')
         <p class="text-sm text-slate-300 mt-1">${p.desc}</p>`;
       card.onclick = () => {
         modal.classList.remove('hidden');
+
         document.getElementById('modal-title').textContent = p.title;
         document.getElementById('modal-desc').textContent = p.desc;
         document.getElementById('modal-thumb').style.backgroundImage = `url('${p.image}')`;
-        document.getElementById('modal-link').href = p.url;
+
+        const link = document.getElementById('modal-link');
+
+        if (!p.url || p.url === '#') {
+          // Disabled state
+          link.textContent = 'Private Project';
+          link.removeAttribute('href');
+          link.classList.add(
+            'opacity-50',
+            'cursor-not-allowed',
+            'pointer-events-none'
+          );
+        } else {
+          // Enabled state
+          link.textContent = 'Visit';
+          link.href = p.url.startsWith('http') ? p.url : `https://${p.url}`;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+
+          link.classList.remove(
+            'opacity-50',
+            'cursor-not-allowed',
+            'pointer-events-none'
+          );
+        }
       };
+
       projectsEl.appendChild(card);
     });
 
