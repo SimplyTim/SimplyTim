@@ -1,6 +1,6 @@
 # Hi, I'm Timothy Singh
 
-I'm a Data Scientist & Software Engineer with a strong foundation in machine learning, data engineering, and full-stack development. I hold a First Class Honours B.Sc. in Computer Science and an M.Sc. in Data Science from the University of British Columbia, where I focused on AI/ML, cloud computing, scalable analytics systems, cloud computing and statistical analysis.
+I'm a Software Engineer & Data Scientist with a strong foundation in machine learning, data engineering, and full-stack development. I hold a First Class Honours B.Sc. in Computer Science and an M.Sc. in Data Science from the University of British Columbia, where I focused on AI/ML, cloud computing, scalable analytics systems, cloud computing and statistical analysis.
 
 I'm passionate about using data and technology to solve real-world problems, as seen in my various projects: credit default risks to measuring the carbon footprint of software. I believe in building scalable, ethical, and meaningful technology that has an impact.
 
