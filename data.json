@@ -1,4 +1,48 @@
 {
+  "profile": {
+    "name": "Timothy Singh",
+    "heroLabel": "Software Engineering x Data x ML",
+    "heroTitle": "Building software, data, and ML products that teams can trust.",
+    "heroSummary": "I'm Timothy Singh, a builder working across software engineering, data, and machine learning to turn messy problems into clear systems, reliable analysis, and production-ready products.",
+    "availability": "Open to software engineering, data, and ML roles.",
+    "focusAreas": [
+      "Software Engineering",
+      "Data Science & Analytics",
+      "Machine Learning",
+      "Cloud & Delivery"
+    ],
+    "workPrinciples": [
+      "Communicate tradeoffs early so software, data, and ML work can move forward with clarity.",
+      "Prefer practical, maintainable solutions over impressive-but-fragile complexity.",
+      "Take ownership from problem framing through delivery, testing, and cleanup.",
+      "Collaborate well across technical and non-technical teams to keep momentum high."
+    ],
+    "strengthHighlights": [
+      "Software engineering habits grounded in maintainable architecture, clean tooling, and dependable delivery.",
+      "Data experience spanning analysis, experimentation, and turning messy inputs into decision-ready insight.",
+      "Machine learning work backed by practical modeling, evaluation, and product-minded implementation."
+    ],
+    "contactHeading": "Open to software engineering, data, and ML roles.",
+    "contactSummary": "If you're hiring across software engineering, data, or machine learning, I'd love to talk. This portfolio is built to show technical range across all three, along with how I communicate, collaborate, and deliver."
+  },
+  "softSkills": [
+    {
+      "title": "Clear communication",
+      "desc": "I translate technical tradeoffs into language teammates, stakeholders, and hiring managers can act on quickly without losing the important nuance."
+    },
+    {
+      "title": "Ownership and follow-through",
+      "desc": "I like taking projects from idea to shipped result, not stopping once the prototype works or the interesting part is done."
+    },
+    {
+      "title": "Cross-functional collaboration",
+      "desc": "I work comfortably with technical and non-technical teammates to keep momentum high, surface risks early, and keep decisions clear."
+    },
+    {
+      "title": "Practical problem solving",
+      "desc": "I focus on solutions that are maintainable, useful, and grounded in real constraints instead of overengineering for its own sake."
+    }
+  ],
   "skills": {
     "Programming Languages": [
       { "name": "Python", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
@@ -30,43 +74,51 @@
       "title": "MTR-Framework",
       "desc": "Python package to measure and track carbon emissions of code during runtime via real-time API calls and hardware metrics. Built as a UBC Capstone project with ALS Geoanalytics.",
       "url": "#",
-      "image": "https://geographical.co.uk/wp-content/uploads/carbon-dioxide-emissions-title.jpg"
+      "image": "https://geographical.co.uk/wp-content/uploads/carbon-dioxide-emissions-title.jpg",
+      "status": "Private Case Study",
+      "tags": ["Python", "Sustainability", "Systems"]
     },
     {
       "title": "DSResuMatch",
       "desc": "Tool for analyzing resumes vs job descriptions, scoring based on keyword relevance. Applies NLP for section extraction and matching logic.",
       "url": "https://github.com/UBC-MDS/dsresumatch",
-      "image": "https://raw.githubusercontent.com/UBC-MDS/dsresumatch/refs/heads/project_logo/docs/logo.png"
+      "image": "https://raw.githubusercontent.com/UBC-MDS/dsresumatch/refs/heads/project_logo/docs/logo.png",
+      "tags": ["NLP", "Python", "Hiring Tools"]
     },
     {
       "title": "NIH Chest X-ray Classifier",
       "desc": "Built a deep learning pipeline (CNN) to classify thoracic diseases from X-ray images. Created during the UBC Medicine Datathon 2025.",
       "url": "https://github.com/SimplyTim/NIH-Chest-XRay-Classifier",
-      "image": "https://media.post.rvohealth.io/wp-content/uploads/sites/3/2022/08/heart-chest-x-ray-thumb.png"
+      "image": "https://media.post.rvohealth.io/wp-content/uploads/sites/3/2022/08/heart-chest-x-ray-thumb.png",
+      "tags": ["Deep Learning", "Computer Vision", "Healthcare"]
     },
     {
       "title": "Wine Quality Predictor",
       "desc": "Deployed ML classification model to predict wine quality using physiochemical properties. Includes feature engineering, data pipelines, and cross-validation.",
       "url": "https://github.com/UBC-MDS/wine_quality_predictor_group1",
-      "image": "https://raw.githubusercontent.com/Masterx-AI/Project_Wine_Quality_Investigation/main/wq.jpg"
+      "image": "https://raw.githubusercontent.com/Masterx-AI/Project_Wine_Quality_Investigation/main/wq.jpg",
+      "tags": ["Classification", "Pipelines", "Modeling"]
     },
     {
       "title": "Poke-Dashboard",
-      "desc": "Fun Shiny dashboard built in R, acting as a fully interactive Pokédex for all Pokémon up to Gen 8. Focus on data visualization and UI design.",
+      "desc": "Fun Shiny dashboard built in R, acting as a fully interactive Pokedex for all Pokemon up to Gen 8. Focus on data visualization and UI design.",
       "url": "https://poke-dashboard.onrender.com/",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/13145319/Screen_Shot_2015-04-09_at_12.52.21_PM.0.0.1487799402.png"
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/13145319/Screen_Shot_2015-04-09_at_12.52.21_PM.0.0.1487799402.png",
+      "tags": ["R Shiny", "Visualization", "UI Design"]
     },
     {
       "title": "Credit Card Default Predictor",
       "desc": "ML pipeline for classifying high-risk customers. Includes preprocessing, feature selection, model tuning, and evaluation.",
       "url": "https://github.com/SimplyTim/Credit-Card-Default-Predictor",
-      "image": "https://cdn2.hubspot.net/hub/7379058/hubfs/Accepting%20a%20credit%20card%20at%20a%20terminal.png"
+      "image": "https://cdn2.hubspot.net/hub/7379058/hubfs/Accepting%20a%20credit%20card%20at%20a%20terminal.png",
+      "tags": ["Risk Modeling", "Feature Engineering", "Evaluation"]
     },
     {
       "title": "Project Bloodline",
       "desc": "A PWA built using Angular and Flask to encourage blood donations. JAM stack application with REST APIs, login/auth, and mobile-ready design.",
       "url": "https://project-bloodline.web.app/",
-      "image": "https://www.personalabs.com/wp-content/uploads/2023/09/close-up-unrecognizable-male-donor-donating-blood-squeezing-stress-ball-copy-space.jpg"
+      "image": "https://www.personalabs.com/wp-content/uploads/2023/09/close-up-unrecognizable-male-donor-donating-blood-squeezing-stress-ball-copy-space.jpg",
+      "tags": ["Angular", "Flask", "PWA"]
     }
   ],
   "education": [
