@@ -11,13 +11,13 @@
 
 <p align="center">
   <a href="mailto:timothysingh@live.com">
-    <img src="https://img.shields.io/badge/Email-Contact%20Me-16285B?style=for-the-badge&logo=gmail&logoColor=white" alt="Email badge" />
+    <img src="https://img.shields.io/badge/Email-16285B?style=for-the-badge&logo=gmail&logoColor=white" alt="Email badge" />
   </a>
   <a href="https://linkedin.com/in/timothy-singh-a1255b121">
-    <img src="https://img.shields.io/badge/LinkedIn-Timothy%20Singh-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn badge" />
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn badge" />
   </a>
   <a href="https://github.com/SimplyTim">
-    <img src="https://img.shields.io/badge/GitHub-SimplyTim-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub badge" />
+    <img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub badge" />
   </a>
 </p>
 
@@ -77,8 +77,8 @@ My work sits at the intersection of backend engineering, automation, analytics, 
 ## GitHub Snapshot
 
 <p align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=SimplyTim&show_icons=true&hide_border=true&theme=tokyonight&bg_color=0D1117&title_color=8DB6FF&icon_color=7EE7D1&text_color=D9E2FF" alt="GitHub stats" />
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SimplyTim&layout=compact&hide_border=true&theme=tokyonight&bg_color=0D1117&title_color=8DB6FF&text_color=D9E2FF" alt="Top languages" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=SimplyTim&theme=tokyonight" alt="GitHub stats" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=SimplyTim&theme=tokyonight" alt="Top languages" />
 </p>
 
 <p align="center">
@@ -129,13 +129,13 @@ My work sits at the intersection of backend engineering, automation, analytics, 
 
 <p align="center">
   <a href="mailto:timothysingh@live.com">
-    <img src="https://img.shields.io/badge/Email-timothysingh%40live.com-16285B?style=for-the-badge&logo=gmail&logoColor=white" alt="Email contact" />
+    <img src="https://img.shields.io/badge/Email-16285B?style=for-the-badge&logo=gmail&logoColor=white" alt="Email contact" />
   </a>
   <a href="https://linkedin.com/in/timothy-singh-a1255b121">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn connect" />
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn connect" />
   </a>
   <a href="https://github.com/SimplyTim">
-    <img src="https://img.shields.io/badge/GitHub-Follow-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub follow" />
+    <img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub follow" />
   </a>
 </p>
 
