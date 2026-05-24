@@ -5,8 +5,7 @@
     "heroLabel": "Software Engineering x Data Analytics",
     "heroTitle": "I build dependable software, automate messy workflows, and turn data into useful decisions.",
     "heroSummary": "M.Sc. Data Science graduate from UBC with 4+ years of technical delivery experience across software, analytics, and public-sector systems. I have reduced onboarding time by 40%, improved asset tracking efficiency by 35%, supported 200+ staff environments, and built Python, SQL, and web-based solutions teams can actually use.",
-    "availability": "Open to software engineering and data analyst roles in Canada.",
-    "location": "Vancouver, BC / Trinidad and Tobago",
+    "availability": "Open to software engineering and data analyst roles.",
     "resumePath": "assets/Timothy%20Singh%20-%20CV%20Full.pdf",
     "resumeDownloadName": "Timothy-Singh-CV.pdf",
     "focusAreas": [
@@ -27,10 +26,6 @@
       {
         "label": "Core Tools",
         "value": "Python, SQL, Java, Power BI"
-      },
-      {
-        "label": "Location",
-        "value": "Vancouver, BC / Trinidad and Tobago"
       }
     ],
     "aboutTitle": "Engineering discipline, analytics, and stakeholder communication are the threads that connect my work.",
@@ -104,7 +99,7 @@
       "kind": "experience",
       "period": "Jul 2025 - Present",
       "title": "Data Annotator",
-      "org": "DataAnnotation, Remote",
+      "org": "DataAnnotation",
       "summary": "Assess machine learning model outputs across text, reasoning, and code tasks using structured rubrics and technical review.",
       "bullets": [
         "Evaluate outputs for correctness, reasoning quality, instruction adherence, and code quality.",
@@ -116,7 +111,7 @@
       "kind": "experience",
       "period": "Apr 2025 - Jul 2025",
       "title": "Data Science Intern (Capstone Project)",
-      "org": "ALS Geoanalytics, North Vancouver, Canada",
+      "org": "ALS Geoanalytics",
       "summary": "Built an emissions-aware Python framework for deep learning workflows and benchmarked it against existing tools.",
       "bullets": [
         "Designed a Python package for tracking carbon emissions from deep learning models with roughly 85% measurement accuracy versus existing packages.",
@@ -129,7 +124,7 @@
       "kind": "experience",
       "period": "Sep 2021 - Aug 2024",
       "title": "Digital Transformation Analyst - ICT Services Division",
-      "org": "Ministry of Digital Transformation, Trinidad and Tobago",
+      "org": "Ministry of Digital Transformation",
       "summary": "Delivered ICT deployment, operational reporting, technical support, analysis, and web implementation work across ministry services.",
       "bullets": [
         "Configured, deployed, and maintained Ubuntu environments for 200+ staff, reducing onboarding time by 40%.",
@@ -143,7 +138,7 @@
       "kind": "experience",
       "period": "Jun 2020 - Aug 2020",
       "title": "Intern",
-      "org": "Republic Bank - Information Technology Management Division, Trinidad and Tobago",
+      "org": "Republic Bank - Information Technology Management Division",
       "summary": "Supported data cleanup, internal tooling, and user recertification work for the credit card support team.",
       "bullets": [
         "Cleaned and transformed large Excel datasets with Python and pandas for ingestion into an internal SQL database.",
@@ -160,7 +155,7 @@
     },
     {
       "title": "B.Sc. Computer Science, First Class Honours",
-      "org": "University of the West Indies, St. Augustine Campus",
+      "org": "University of the West Indies",
       "detail": "GPA: 4.23",
       "year": "2021"
     }
