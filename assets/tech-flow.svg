@@ -1,0 +1,78 @@
+<svg width="1200" height="200" viewBox="0 0 1200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="flowBg" x1="24" y1="24" x2="1176" y2="176" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071326"/>
+      <stop offset="0.5" stop-color="#0E1E44"/>
+      <stop offset="1" stop-color="#132857"/>
+    </linearGradient>
+    <linearGradient id="flowStroke" x1="124" y1="100" x2="1076" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DE8D0"/>
+      <stop offset="0.5" stop-color="#89B4FF"/>
+      <stop offset="1" stop-color="#8F7BFF"/>
+    </linearGradient>
+    <filter id="flowGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <path id="mainFlow" d="M130 104C262 52 364 148 502 104C624 66 718 62 830 102C926 136 1006 128 1070 88"/>
+  </defs>
+
+  <rect width="1200" height="200" rx="28" fill="url(#flowBg)"/>
+  <rect x="1" y="1" width="1198" height="198" rx="27" stroke="#89A8FF" stroke-opacity="0.2" stroke-width="2"/>
+
+  <path d="M130 104C262 52 364 148 502 104C624 66 718 62 830 102C926 136 1006 128 1070 88" stroke="url(#flowStroke)" stroke-width="4" stroke-linecap="round" filter="url(#flowGlow)"/>
+  <path d="M130 104C262 52 364 148 502 104C624 66 718 62 830 102C926 136 1006 128 1070 88" stroke="#D6E3FF" stroke-opacity="0.28" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 10">
+    <animate attributeName="stroke-dashoffset" values="0;-34" dur="3.2s" repeatCount="indefinite"/>
+  </path>
+
+  <g>
+    <circle cx="130" cy="104" r="8" fill="#7DE8D0"/>
+    <circle cx="356" cy="120" r="8" fill="#89B4FF"/>
+    <circle cx="598" cy="82" r="8" fill="#D6E3FF"/>
+    <circle cx="830" cy="102" r="8" fill="#8F7BFF"/>
+    <circle cx="1070" cy="88" r="8" fill="#7DE8D0"/>
+  </g>
+
+  <g opacity="0.95">
+    <rect x="86" y="42" width="112" height="34" rx="17" fill="#102347" stroke="#7DE8D0" stroke-opacity="0.45"/>
+    <rect x="300" y="140" width="108" height="34" rx="17" fill="#102347" stroke="#89B4FF" stroke-opacity="0.45"/>
+    <rect x="542" y="28" width="116" height="34" rx="17" fill="#102347" stroke="#D6E3FF" stroke-opacity="0.45"/>
+    <rect x="776" y="140" width="98" height="34" rx="17" fill="#102347" stroke="#8F7BFF" stroke-opacity="0.45"/>
+    <rect x="982" y="36" width="120" height="34" rx="17" fill="#102347" stroke="#7DE8D0" stroke-opacity="0.45"/>
+
+    <text x="121" y="64" fill="#EAF0FF" font-family="Verdana, Arial, sans-serif" font-size="14">Python</text>
+    <text x="340" y="162" fill="#EAF0FF" font-family="Verdana, Arial, sans-serif" font-size="14">SQL</text>
+    <text x="575" y="50" fill="#EAF0FF" font-family="Verdana, Arial, sans-serif" font-size="14">APIs</text>
+    <text x="814" y="162" fill="#EAF0FF" font-family="Verdana, Arial, sans-serif" font-size="14">ML</text>
+    <text x="1020" y="58" fill="#EAF0FF" font-family="Verdana, Arial, sans-serif" font-size="14">Cloud</text>
+  </g>
+
+  <circle r="5" fill="#FFFFFF">
+    <animateMotion dur="5.8s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#mainFlow"/>
+    </animateMotion>
+  </circle>
+  <circle r="4" fill="#7DE8D0">
+    <animateMotion dur="7s" repeatCount="indefinite" rotate="auto" keyPoints="1;0" keyTimes="0;1">
+      <mpath href="#mainFlow"/>
+    </animateMotion>
+  </circle>
+
+  <g opacity="0.4">
+    <circle cx="214" cy="72" r="2.5" fill="#D9E5FF">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="468" cy="146" r="2.5" fill="#D9E5FF">
+      <animate attributeName="opacity" values="1;0.2;1" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="698" cy="54" r="2.5" fill="#D9E5FF">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="934" cy="146" r="2.5" fill="#D9E5FF">
+      <animate attributeName="opacity" values="1;0.2;1" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

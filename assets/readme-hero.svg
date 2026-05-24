@@ -1,0 +1,174 @@
+<svg width="1200" height="340" viewBox="0 0 1200 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="64" y1="32" x2="1128" y2="324" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071225"/>
+      <stop offset="0.55" stop-color="#0D1D3D"/>
+      <stop offset="1" stop-color="#16285B"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1200" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6AA7FF"/>
+      <stop offset="0.55" stop-color="#7B7FFF"/>
+      <stop offset="1" stop-color="#82F2D0"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="240" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8AB7FF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#8AB7FF" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#8AB7FF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="742" y1="50" x2="1114" y2="282" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E1835" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#121A3D" stop-opacity="0.74"/>
+    </linearGradient>
+    <linearGradient id="barA" x1="0" y1="0" x2="0" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#84F1CF"/>
+      <stop offset="1" stop-color="#2CB7FF"/>
+    </linearGradient>
+    <linearGradient id="barB" x1="0" y1="0" x2="0" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A6B8FF"/>
+      <stop offset="1" stop-color="#697AFF"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" stroke="#A8B7E8" stroke-opacity="0.08"/>
+    </pattern>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="panelGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feColorMatrix
+        in="blur"
+        type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.24 0"
+      />
+    </filter>
+    <path id="flowA" d="M728 96C804 52 922 50 1082 108"/>
+    <path id="flowB" d="M742 164C840 124 934 132 1088 182"/>
+    <path id="flowC" d="M726 234C834 270 952 264 1086 220"/>
+  </defs>
+
+  <rect width="1200" height="340" rx="32" fill="url(#bg)"/>
+  <rect width="1200" height="340" rx="32" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1198" height="338" rx="31" stroke="url(#edge)" stroke-opacity="0.32" stroke-width="2"/>
+
+  <g opacity="0.82">
+    <circle cx="198" cy="84" r="120" fill="#3C62FF" fill-opacity="0.18" filter="url(#softGlow)">
+      <animate attributeName="cy" values="84;96;84" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1040" cy="64" r="116" fill="#8A79FF" fill-opacity="0.15" filter="url(#softGlow)">
+      <animate attributeName="cx" values="1040;1014;1040" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="938" cy="292" r="128" fill="#4DD5E8" fill-opacity="0.12" filter="url(#softGlow)">
+      <animate attributeName="cy" values="292;278;292" dur="12s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <rect x="0" y="130" width="240" height="80" fill="url(#scan)">
+    <animate attributeName="x" values="-240;1200" dur="8s" repeatCount="indefinite"/>
+  </rect>
+
+  <g opacity="0.94">
+    <text x="76" y="70" fill="#91B6FF" font-family="Verdana, Arial, sans-serif" font-size="17" letter-spacing="5">PORTFOLIO SIGNAL</text>
+    <text x="76" y="152" fill="#F7FAFF" font-family="Verdana, Arial, sans-serif" font-size="52" font-weight="700">Timothy Singh</text>
+    <text x="76" y="194" fill="#B8C7EF" font-family="Verdana, Arial, sans-serif" font-size="22">Software Engineer | Data Analyst</text>
+    <text x="76" y="232" fill="#DCE5FF" font-family="Verdana, Arial, sans-serif" font-size="18">
+      Building reliable backend systems, analytics workflows,
+    </text>
+    <text x="76" y="260" fill="#DCE5FF" font-family="Verdana, Arial, sans-serif" font-size="18">
+      applied ML tooling, and data-driven products people can use.
+    </text>
+  </g>
+
+  <g>
+    <rect x="76" y="286" width="118" height="30" rx="15" fill="#0F2146" stroke="#5B8FFF" stroke-opacity="0.55"/>
+    <rect x="206" y="286" width="104" height="30" rx="15" fill="#0F2146" stroke="#7E86FF" stroke-opacity="0.55"/>
+    <rect x="322" y="286" width="96" height="30" rx="15" fill="#0F2146" stroke="#7EE7D1" stroke-opacity="0.55"/>
+    <text x="97" y="306" fill="#E7EEFF" font-family="Verdana, Arial, sans-serif" font-size="13">Backend</text>
+    <text x="232" y="306" fill="#E7EEFF" font-family="Verdana, Arial, sans-serif" font-size="13">Analytics</text>
+    <text x="350" y="306" fill="#E7EEFF" font-family="Verdana, Arial, sans-serif" font-size="13">Applied ML</text>
+  </g>
+
+  <g>
+    <rect x="718" y="54" width="394" height="228" rx="24" fill="url(#panel)" stroke="#7F90FF" stroke-opacity="0.28"/>
+    <rect x="718" y="54" width="394" height="228" rx="24" filter="url(#panelGlow)" fill="#4E76FF" fill-opacity="0.02"/>
+
+    <text x="752" y="92" fill="#EAF0FF" font-family="Verdana, Arial, sans-serif" font-size="16">active workstreams</text>
+    <text x="752" y="118" fill="#8AAEFF" font-family="Verdana, Arial, sans-serif" font-size="13" letter-spacing="2">SYSTEMS / DATA / AI</text>
+
+    <path d="M752 146H1078" stroke="#91A4D8" stroke-opacity="0.18"/>
+    <path d="M752 206H1078" stroke="#91A4D8" stroke-opacity="0.12"/>
+    <path d="M752 252H1078" stroke="#91A4D8" stroke-opacity="0.12"/>
+
+    <rect x="766" y="216" width="24" height="36" rx="8" fill="url(#barB)">
+      <animate attributeName="height" values="36;52;36" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="216;200;216" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="802" y="188" width="24" height="64" rx="8" fill="url(#barA)">
+      <animate attributeName="height" values="64;84;64" dur="5.2s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="188;168;188" dur="5.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="838" y="168" width="24" height="84" rx="8" fill="url(#barB)">
+      <animate attributeName="height" values="84;72;84" dur="4.8s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="168;180;168" dur="4.8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="874" y="200" width="24" height="52" rx="8" fill="url(#barA)">
+      <animate attributeName="height" values="52;70;52" dur="5.7s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="200;182;200" dur="5.7s" repeatCount="indefinite"/>
+    </rect>
+
+    <path d="M934 222C966 194 990 178 1014 184C1032 188 1046 208 1078 170" stroke="#8FD4FF" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 8">
+      <animate attributeName="stroke-dashoffset" values="0;-32" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="934" cy="222" r="5" fill="#91D7FF"/>
+    <circle cx="1014" cy="184" r="5" fill="#A9B4FF"/>
+    <circle cx="1078" cy="170" r="5" fill="#83F0D0"/>
+
+    <text x="948" y="95" fill="#C8D6FF" font-family="Verdana, Arial, sans-serif" font-size="12">Python</text>
+    <text x="1000" y="146" fill="#C8D6FF" font-family="Verdana, Arial, sans-serif" font-size="12">SQL</text>
+    <text x="980" y="246" fill="#C8D6FF" font-family="Verdana, Arial, sans-serif" font-size="12">RAG</text>
+    <text x="1040" y="112" fill="#C8D6FF" font-family="Verdana, Arial, sans-serif" font-size="12">ML</text>
+  </g>
+
+  <g opacity="0.72">
+    <path d="M728 96C804 52 922 50 1082 108" stroke="#91B8FF" stroke-opacity="0.38" stroke-width="2" stroke-linecap="round"/>
+    <path d="M742 164C840 124 934 132 1088 182" stroke="#8BE7D5" stroke-opacity="0.28" stroke-width="2" stroke-linecap="round"/>
+    <path d="M726 234C834 270 952 264 1086 220" stroke="#9B98FF" stroke-opacity="0.3" stroke-width="2" stroke-linecap="round"/>
+
+    <circle r="4.5" fill="#F4F8FF">
+      <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#flowA"/>
+      </animateMotion>
+    </circle>
+    <circle r="4.5" fill="#8EF1D2">
+      <animateMotion dur="7.2s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#flowB"/>
+      </animateMotion>
+    </circle>
+    <circle r="4.5" fill="#AEB9FF">
+      <animateMotion dur="6.4s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#flowC"/>
+      </animateMotion>
+    </circle>
+  </g>
+
+  <g opacity="0.5">
+    <circle cx="634" cy="92" r="2" fill="#D7E2FF">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="662" cy="124" r="2" fill="#D7E2FF">
+      <animate attributeName="opacity" values="1;0.2;1" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="628" cy="182" r="2" fill="#D7E2FF">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="656" cy="246" r="2" fill="#D7E2FF">
+      <animate attributeName="opacity" values="1;0.2;1" dur="4.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
