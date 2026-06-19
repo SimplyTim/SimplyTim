@@ -6,7 +6,7 @@
   <title>Timothy Singh | Portfolio</title>
   <meta
     name="description"
-    content="Portfolio of Timothy Singh spanning software engineering, data science, machine learning, and ICT systems delivery."
+    content="Portfolio of Timothy Singh spanning software engineering, solutions architecture, data science, machine learning, and AI-enabled systems delivery."
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,7 +36,7 @@
       --indigo: #5f71ff;
       --lavender: #c7c4ff;
       --success: #7ef0c4;
-      --shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
+      --shadow: 0 20px 52px rgba(0, 0, 0, 0.24);
       --radius-xl: 34px;
       --radius-lg: 28px;
       --radius-md: 22px;
@@ -121,16 +121,11 @@
         radial-gradient(circle at 18% 20%, rgba(95, 113, 255, 0.24), transparent 26%),
         radial-gradient(circle at 82% 22%, rgba(139, 125, 255, 0.22), transparent 30%),
         radial-gradient(circle at 52% 82%, rgba(121, 92, 255, 0.18), transparent 26%);
-      filter: blur(14px);
-      opacity: 0.95;
+      opacity: 0.72;
     }
 
     .ambient {
-      position: absolute;
-      border-radius: 999px;
-      filter: blur(24px);
-      opacity: 0.75;
-      will-change: transform;
+      display: none;
     }
 
     .ambient-a {
@@ -139,7 +134,6 @@
       width: 30rem;
       height: 30rem;
       background: rgba(95, 113, 255, 0.2);
-      animation: float-a 22s ease-in-out infinite;
     }
 
     .ambient-b {
@@ -148,7 +142,6 @@
       width: 34rem;
       height: 34rem;
       background: rgba(139, 125, 255, 0.18);
-      animation: float-b 18s ease-in-out infinite;
     }
 
     .ambient-c {
@@ -157,7 +150,6 @@
       width: 28rem;
       height: 28rem;
       background: rgba(141, 182, 255, 0.16);
-      animation: float-c 24s ease-in-out infinite;
     }
 
     .grid-overlay {
@@ -175,7 +167,7 @@
     .grain-overlay {
       position: absolute;
       inset: 0;
-      opacity: 0.07;
+      opacity: 0.035;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
       mix-blend-mode: soft-light;
     }
@@ -214,14 +206,16 @@
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
+      width: 100%;
       max-width: 78rem;
       margin: 0 auto;
       padding: 1rem 1.2rem;
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 999px;
       background: rgba(5, 10, 26, 0.62);
-      box-shadow: 0 20px 80px rgba(0, 0, 0, 0.28);
-      backdrop-filter: blur(22px);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.24);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
     }
 
     .brand {
@@ -235,7 +229,7 @@
       font-size: 1.32rem;
       font-family: var(--font-display);
       font-weight: 800;
-      letter-spacing: -0.025em;
+      letter-spacing: 0;
       color: #ffffff;
     }
 
@@ -376,6 +370,17 @@
     .contact-grid {
       display: grid;
       gap: 1.5rem;
+      min-width: 0;
+    }
+
+    .hero-grid > *,
+    .about-grid > *,
+    .skills-layout > *,
+    .contact-grid > *,
+    .projects-layout > *,
+    .projects-grid > *,
+    .highlight-grid > * {
+      min-width: 0;
     }
 
     .hero-grid {
@@ -393,10 +398,11 @@
     .modal-card {
       position: relative;
       overflow: hidden;
+      min-width: 0;
       border: 1px solid var(--border);
       background: linear-gradient(180deg, rgba(11, 22, 40, 0.78), rgba(8, 18, 35, 0.94));
       box-shadow: var(--shadow);
-      backdrop-filter: blur(22px);
+      contain: layout paint;
     }
 
     .glass-panel,
@@ -493,6 +499,7 @@
     }
 
     .hero-copy {
+      min-width: 0;
       padding: 1rem 0.4rem 0.6rem 0;
     }
 
@@ -504,7 +511,7 @@
       font-size: clamp(1.1rem, 1.95vw, 1.38rem);
       font-weight: 600;
       line-height: 1.5;
-      letter-spacing: -0.01em;
+      letter-spacing: 0;
     }
 
     .hero-role {
@@ -531,9 +538,12 @@
     }
 
     .hero-summary {
-      margin-top: 1.2rem;
-      max-width: 46rem;
-      font-size: 1.04rem;
+      margin-top: 0;
+      max-width: 47rem;
+      color: var(--muted-strong);
+      font-size: clamp(1.04rem, 1.6vw, 1.2rem);
+      font-weight: 400;
+      line-height: 1.74;
     }
 
     .chip-row {
@@ -599,7 +609,14 @@
       display: flex;
       flex-direction: column;
       gap: 1.2rem;
+      min-width: 0;
       min-height: 100%;
+    }
+
+    .status-pill {
+      max-width: 100%;
+      white-space: normal;
+      overflow-wrap: anywhere;
     }
 
     .panel-kicker,
@@ -664,7 +681,7 @@
       font-size: clamp(2rem, 5vw, 2.8rem);
       font-weight: 800;
       line-height: 0.98;
-      letter-spacing: -0.03em;
+      letter-spacing: 0;
       color: #ffffff;
     }
 
@@ -685,6 +702,8 @@
     .section {
       margin-top: 1.6rem;
       padding-top: 0.1rem;
+      content-visibility: auto;
+      contain-intrinsic-size: 900px;
     }
 
     .section-head {
@@ -709,7 +728,7 @@
       font-size: clamp(1.8rem, 3.2vw, 2.7rem);
       font-weight: 800;
       line-height: 1.02;
-      letter-spacing: -0.03em;
+      letter-spacing: 0;
       color: #ffffff;
     }
 
@@ -789,7 +808,7 @@
       font-family: var(--font-display);
       font-size: 1.22rem;
       font-weight: 700;
-      letter-spacing: -0.02em;
+      letter-spacing: 0;
     }
 
     .highlight-desc {
@@ -893,7 +912,7 @@
       font-size: 1.46rem;
       font-weight: 700;
       line-height: 1.12;
-      letter-spacing: -0.02em;
+      letter-spacing: 0;
       color: #ffffff;
     }
 
@@ -901,6 +920,25 @@
       margin-top: 0.5rem;
       color: var(--muted-strong);
       line-height: 1.5;
+    }
+
+    .entity-link,
+    .timeline-org a,
+    .credential-sub {
+      color: inherit;
+      text-decoration: underline;
+      text-decoration-color: rgba(141, 182, 255, 0.36);
+      text-underline-offset: 0.22em;
+      transition:
+        color 180ms ease,
+        text-decoration-color 180ms ease;
+    }
+
+    .entity-link:hover,
+    .timeline-org a:hover,
+    .credential-sub:hover {
+      color: #ffffff;
+      text-decoration-color: rgba(141, 182, 255, 0.86);
     }
 
     .timeline-summary {
@@ -951,7 +989,7 @@
       font-family: var(--font-display);
       font-size: 1.4rem;
       font-weight: 700;
-      letter-spacing: -0.02em;
+      letter-spacing: 0;
       color: #ffffff;
     }
 
@@ -977,8 +1015,16 @@
       gap: 0.65rem;
     }
 
+    .project-link-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-top: 0.15rem;
+    }
+
     .skill-chip,
-    .tag-chip {
+    .tag-chip,
+    .project-link {
       padding: 0.56rem 0.78rem;
       border-radius: 999px;
       border: 1px solid rgba(255, 255, 255, 0.08);
@@ -986,6 +1032,23 @@
       color: #edf2ff;
       font-size: 0.84rem;
       line-height: 1.2;
+    }
+
+    .project-link {
+      color: #ffffff;
+      border-color: rgba(141, 182, 255, 0.18);
+      background: rgba(95, 113, 255, 0.1);
+      text-decoration: none;
+      transition:
+        transform 180ms ease,
+        border-color 180ms ease,
+        background 180ms ease;
+    }
+
+    .project-link:hover {
+      transform: translateY(-1px);
+      border-color: rgba(141, 182, 255, 0.34);
+      background: rgba(95, 113, 255, 0.18);
     }
 
     .cert-panel {
@@ -1090,7 +1153,7 @@
       font-size: clamp(1.7rem, 3.2vw, 2.7rem);
       font-weight: 800;
       line-height: 1.02;
-      letter-spacing: -0.03em;
+      letter-spacing: 0;
       color: #ffffff;
     }
 
@@ -1156,7 +1219,7 @@
       font-size: 1.55rem;
       font-weight: 700;
       line-height: 1.12;
-      letter-spacing: -0.02em;
+      letter-spacing: 0;
       color: #ffffff;
     }
 
@@ -1241,7 +1304,8 @@
       place-items: center;
       padding: 1rem;
       background: rgba(4, 7, 18, 0.72);
-      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
       z-index: 40;
     }
 
@@ -1297,7 +1361,7 @@
       font-size: clamp(1.7rem, 3vw, 2.45rem);
       font-weight: 800;
       line-height: 1.02;
-      letter-spacing: -0.03em;
+      letter-spacing: 0;
       color: #ffffff;
     }
 
@@ -1337,6 +1401,11 @@
     .reveal-visible {
       opacity: 1;
       transform: translateY(0);
+    }
+
+    .hero .reveal {
+      opacity: 1;
+      transform: none;
     }
 
     @media (max-width: 1080px) {
@@ -1582,7 +1651,7 @@
     <div class="nav-shell">
       <a class="brand" href="#top">
         <span id="brand-name" class="brand-name">Timothy Singh</span>
-        <span class="brand-role">Software x Data x ML</span>
+        <span class="brand-role">Software x AI x Systems</span>
       </a>
 
       <button
@@ -1610,8 +1679,8 @@
           <a href="#contact"><span>05</span>Contact</a>
         </nav>
 
-        <a class="nav-cta" data-resume-link href="assets/Timothy%20Singh%20-%20CV%20Full.pdf" download="Timothy-Singh-CV.pdf">
-          Download CV
+        <a class="nav-cta" data-resume-link href="assets/resume.pdf" download="Timothy-Singh-Resume.pdf">
+          Download Resume
         </a>
       </div>
     </div>
@@ -1621,24 +1690,24 @@
     <section id="top" class="hero">
       <div class="hero-grid">
         <div class="hero-copy reveal">
-          <span id="hero-label" class="eyebrow">Software Engineering x Data Analytics</span>
-          <h1 id="hero-title" class="hero-title">I build dependable software, automate messy workflows, and turn data into useful decisions.</h1>
-          <p id="profile-role" class="hero-role">Software Engineer | Data Analyst</p>
+          <span id="hero-label" hidden></span>
+          <span id="hero-title" hidden></span>
+          <span id="profile-role" hidden></span>
           <p id="hero-summary" class="hero-summary">
-            M.Sc. Data Science graduate from UBC with 4+ years of technical delivery experience across software, analytics, and public-sector systems. I have reduced onboarding time by 40%, improved asset tracking efficiency by 35%, supported 200+ staff environments, and built Python, SQL, and web-based solutions teams can actually use.
+            Software Engineer / Solutions Architect with an M.Sc. in Data Science from UBC (GPA: 4.33), a First Class Honours B.Sc. in Computer Science, and 4+ years of technical delivery across government, financial services, and applied research. I build Python packages, REST/API-enabled applications, web systems, Java/JDBC database interfaces, Linux solutions, and AI-enabled workflows that real stakeholders can use.
           </p>
 
-          <div id="hero-focus-areas" class="chip-row"></div>
+          <div id="hero-focus-areas" hidden></div>
 
           <div class="hero-actions">
             <a class="action action-primary" href="#projects">See Relevant Work</a>
-            <a class="action action-secondary" data-resume-link href="assets/Timothy%20Singh%20-%20CV%20Full.pdf" download="Timothy-Singh-CV.pdf">Download CV</a>
+            <a class="action action-secondary" data-resume-link href="assets/resume.pdf" download="Timothy-Singh-Resume.pdf">Download Resume</a>
             <a class="action action-ghost" href="#contact">Get In Touch</a>
           </div>
         </div>
 
         <aside class="hero-panel reveal" style="--card-accent: 141, 182, 255;">
-          <span id="availability-pill" class="status-pill">Open to software engineering and data analyst roles.</span>
+          <span id="availability-pill" class="status-pill">Open to software engineering, solutions architecture, and data/AI engineering roles.</span>
           <p class="panel-kicker">Career Snapshot</p>
           <div id="hero-snapshot" class="snapshot-list"></div>
           <div id="home-stats" class="metrics-grid"></div>
@@ -1679,7 +1748,7 @@
         <span class="section-rule"></span>
       </div>
       <p class="section-copy reveal">
-        Recent work first, with emphasis on delivery, measurable results, and tools relevant to software engineering and data analyst roles.
+        Recent work first, with emphasis on delivery, measurable results, and tools relevant to software engineering, solutions architecture, and AI-enabled systems.
       </p>
 
       <div id="timeline-container" class="timeline"></div>
@@ -1692,7 +1761,7 @@
         <span class="section-rule"></span>
       </div>
       <p class="section-copy reveal">
-        Organized around the capabilities most relevant to backend and software engineering conversations, plus the SQL, Python, and reporting skills expected in data analyst roles.
+        Organized around the capabilities most relevant to backend engineering, API-enabled applications, cloud delivery, Linux systems, data workflows, and applied AI/ML work.
       </p>
 
       <div class="skills-layout">
@@ -1734,13 +1803,13 @@
       <div class="contact-grid">
         <section class="glass-panel reveal" style="--card-accent: 129, 140, 248;">
           <p class="section-kicker">Open To</p>
-          <h2 id="contact-heading" class="section-title" style="margin-top: 0.6rem;">Open to software engineering and data analyst roles.</h2>
+          <h2 id="contact-heading" class="section-title" style="margin-top: 0.6rem;">Open to software engineering, solutions architecture, and data/AI engineering roles.</h2>
           <p id="contact-summary" class="contact-summary" style="margin-top: 1rem;">
-            If you are hiring for backend or software engineering roles, or for data analyst roles that value SQL, Python, and stakeholder communication, I would love to connect.
+            If you are hiring for software engineering or solutions architecture roles that value Python, Java, APIs, cloud tooling, Linux systems, and clear stakeholder communication, I would love to connect.
           </p>
           <div class="contact-actions">
             <a class="action action-primary" href="#projects">Review Projects</a>
-            <a class="action action-secondary" data-resume-link href="assets/Timothy%20Singh%20-%20CV%20Full.pdf" download="Timothy-Singh-CV.pdf">Download CV</a>
+            <a class="action action-secondary" data-resume-link href="assets/resume.pdf" download="Timothy-Singh-Resume.pdf">Download Resume</a>
           </div>
         </section>
 
@@ -1766,6 +1835,7 @@
         <span id="modal-status" class="status-badge">Public Project</span>
       </div>
       <div id="modal-tags" class="modal-tags" style="margin-top: 1rem;"></div>
+      <div id="modal-related-links" class="project-link-list"></div>
       <p id="modal-desc" class="modal-copy"></p>
       <p id="modal-extra" class="modal-extra"></p>
       <div class="modal-actions">
@@ -1779,23 +1849,16 @@
 {
   "profile": {
     "name": "Timothy Singh",
-    "role": "Software Engineer | Data Analyst",
-    "heroLabel": "Software Engineering x Data Analytics",
-    "heroTitle": "I build dependable software, automate messy workflows, and turn data into useful decisions.",
-    "heroSummary": "M.Sc. Data Science graduate from UBC with 4+ years of technical delivery experience across software, analytics, and public-sector systems. I have reduced onboarding time by 40%, improved asset tracking efficiency by 35%, supported 200+ staff environments, and built Python, SQL, and web-based solutions teams can actually use.",
-    "availability": "Open to software engineering and data analyst roles.",
-    "resumePath": "assets/Timothy%20Singh%20-%20CV%20Full.pdf",
-    "resumeDownloadName": "Timothy-Singh-CV.pdf",
-    "focusAreas": [
-      "Backend Development",
-      "SQL & Analytics",
-      "Automation & Reporting",
-      "Applied ML"
-    ],
+    "role": "Software Engineer | Solutions Architect",
+    "heroSummary": "Software Engineer / Solutions Architect with an M.Sc. in Data Science from UBC (GPA: 4.33), a First Class Honours B.Sc. in Computer Science, and 4+ years of technical delivery across government, financial services, and applied research. I build Python packages, REST/API-enabled applications, web systems, Java/JDBC database interfaces, Linux solutions, and AI-enabled workflows that real stakeholders can use.",
+    "availability": "Open to software engineering, solutions architecture, and data/AI engineering roles.",
+    "resumePath": "assets/resume.pdf",
+    "resumeDownloadName": "Timothy-Singh-Resume.pdf",
+    "focusAreas": [],
     "quickFacts": [
       {
         "label": "Focus",
-        "value": "Software engineering and data analysis"
+        "value": "Software engineering and solutions architecture"
       },
       {
         "label": "Recent Degree",
@@ -1803,44 +1866,44 @@
       },
       {
         "label": "Core Tools",
-        "value": "Python, SQL, Java, Power BI"
+        "value": "Python, Java, JavaScript, SQL, AWS, Docker"
       }
     ],
-    "aboutTitle": "Engineering discipline, analytics, and stakeholder communication are the threads that connect my work.",
+    "aboutTitle": "Reliable software, systems thinking, and applied data science are the threads that connect my work.",
     "aboutSummary": [
-      "For software engineering teams, I bring backend and automation experience across Python, Java, Flask, REST APIs, Linux environments, and production-minded problem solving.",
-      "For data analyst teams, I bring SQL, Python, experimentation, reporting, and experience turning messy operational data into recommendations stakeholders can act on.",
-      "What makes me practical to hire is that I have already worked in support-heavy, ambiguous environments. I can understand the process, clean up the data, build the tool, and communicate the result clearly."
+      "For software engineering teams, I bring hands-on backend and application experience across Python, Java, JavaScript, Flask, Node.js, Express.js, REST APIs, SQL, and Java/JDBC interfaces.",
+      "For solutions and AI-enabled systems work, I bring Linux deployment, Docker, GitHub Actions CI/CD, AWS, system validation, and experience translating technical requirements into usable workflows.",
+      "My data science background adds SQL, pandas, scikit-learn, PyTorch workflow integration, model evaluation, reporting, and clear stakeholder communication."
     ],
     "impactPoints": [
-      "Quantified delivery: 40% faster onboarding, 35% stronger asset tracking efficiency, 1,500+ residents reached, and 85% benchmark accuracy in emissions tracking.",
-      "Hands-on with Python, SQL, Java, JavaScript, Flask, REST APIs, pandas, Power BI, and production-minded tooling.",
-      "Comfortable moving between implementation, analysis, stakeholder communication, and follow-through.",
-      "Strong academic signal with a UBC M.Sc. in Data Science and First Class Honours in Computer Science."
+      "Career signal: 4+ years of technical delivery, a UBC M.Sc. Data Science GPA of 4.33, and a First Class Honours Computer Science GPA of 4.23.",
+      "Engineering toolkit spans Python, Java, JavaScript, Flask, Node.js, Express.js, Spring Boot, SQL, Docker, GitHub Actions, AWS, and Linux.",
+      "Hands-on across REST/API applications, Python packages, web systems, Java/JDBC database interfaces, CI/CD, and technical support.",
+      "Comfortable translating requirements into reliable software for government, financial services, and applied research stakeholders."
     ],
-    "contactHeading": "Open to software engineering and data analyst roles.",
-    "contactSummary": "If you are hiring for backend or software engineering roles, or for data analyst roles that value SQL, Python, and stakeholder communication, I would love to connect. My strongest fit is with teams that value ownership, technical breadth, and clear thinking."
+    "contactHeading": "Open to software engineering, solutions architecture, and data/AI engineering roles.",
+    "contactSummary": "If you are hiring for software engineering or solutions architecture roles that value Python, Java, APIs, cloud tooling, Linux systems, and clear stakeholder communication, I would love to connect. My strongest fit is with teams that value ownership, technical breadth, and careful delivery."
   },
   "metrics": [
     {
-      "value": "40%",
-      "label": "Faster onboarding",
-      "detail": "Reduced setup time by deploying and maintaining Ubuntu environments for 200+ staff."
+      "value": "4+",
+      "label": "Years technical delivery",
+      "detail": "Software, analytics, infrastructure, and applied research experience across government, finance, and AI workflows."
     },
     {
-      "value": "35%",
-      "label": "Better tracking efficiency",
-      "detail": "Improved deployment and asset visibility through LDAP and Active Directory integrated tooling."
+      "value": "40+",
+      "label": "Technologies used",
+      "detail": "Hands-on toolkit spanning Python, Java, JavaScript, SQL, REST APIs, Docker, AWS, Linux, databases, and ML workflows."
     },
     {
-      "value": "1,500+",
-      "label": "Residents reached",
-      "detail": "Supported ICT Access Centre deployments across 8 communities."
+      "value": "4.33",
+      "label": "UBC MDS GPA",
+      "detail": "Graduate GPA from the M.Sc. Data Science program, paired with a 4.23 GPA in Computer Science."
     },
     {
-      "value": "85%",
-      "label": "Benchmark accuracy",
-      "detail": "Measured deep learning emissions against existing tooling during a UBC capstone with ALS Geoanalytics."
+      "value": "2",
+      "label": "Computing degrees",
+      "detail": "M.Sc. Data Science from UBC and B.Sc. Computer Science with First Class Honours."
     }
   ],
   "highlights": [
@@ -1848,174 +1911,229 @@
       "title": "Software Engineering Fit",
       "desc": "Strong match for backend, automation, and product engineering roles that need someone who can build, debug, and ship.",
       "points": [
-        "Python, Java, Flask, REST APIs, SQL, Linux, and deployment-aware problem solving.",
-        "Experience building web apps, internal tools, and maintainable technical workflows.",
-        "Support background helps me design with reliability and real users in mind."
+        "Python, Java, JavaScript, Flask, Node.js, Express.js, REST APIs, JDBC, SQLAlchemy, and database-backed applications.",
+        "Experience building Python packages, internal tools, web systems, and Java/JDBC interfaces used by real stakeholders.",
+        "Validation mindset from support and production environments: code review, edge-case analysis, testing, and documentation."
       ]
     },
     {
-      "title": "Data Analyst Fit",
-      "desc": "Strong match for analyst roles that need technical depth, clear communication, and comfort working with messy operational data.",
+      "title": "Solutions Architecture Fit",
+      "desc": "Strong match for roles that connect requirements, infrastructure, APIs, data, and deployment workflows into maintainable systems.",
       "points": [
-        "SQL and Python for cleaning, querying, analysis, and automation.",
-        "Experience producing reports, interpreting trends, and supporting decision-making.",
-        "Comfortable pairing analysis with experimentation, dashboards, and stakeholder explanations."
+        "Hands-on with AWS, Docker, GitHub Actions CI/CD, Ubuntu, Bash, LDAP / Active Directory, network imaging, and system validation.",
+        "Experience designing workflows that bridge technical implementation and non-technical stakeholder needs.",
+        "Comfortable owning the path from requirement discovery to tested, documented delivery."
       ]
     },
     {
-      "title": "Career Highlights",
-      "desc": "A record of real delivery, strong academics, and measurable outcomes across software and analytics work.",
+      "title": "Data & AI Systems Fit",
+      "desc": "A data science foundation paired with recent AI, ML, and analytics work.",
       "points": [
-        "4+ years in technical delivery across public-sector systems, analytics, and software support.",
-        "UBC M.Sc. Data Science plus First Class Honours in Computer Science.",
-        "Projects demonstrate both engineering build ability and analytical reasoning."
+        "UBC M.Sc. Data Science, First Class Honours in Computer Science, and applied ML project experience.",
+        "Python, SQL, pandas, scikit-learn, PyTorch workflow integration, model evaluation, reporting, and dashboard work.",
+        "Recent AI content pipeline work uses Python/API requests with AWS processing and storage."
       ]
     }
   ],
   "timeline": [
     {
       "kind": "experience",
+      "period": "Apr 2026 - Present",
+      "title": "AI Content Development Assistant",
+      "org": "Ministry of Education",
+      "orgUrl": "https://www.moe.gov.tt/",
+      "summary": "Build and support AI-enabled media generation workflows using Python, API integrations, AWS, GitHub, and CI/CD practices.",
+      "bullets": [
+        "Designed and built an agentic AI video and audio generation pipeline using Python scripts and API requests to synchronize generated media while leveraging AWS for processing and storage.",
+        "Managed a production GitHub repository by overseeing team permissions, maintaining GitHub Actions CI/CD workflows, and establishing a structured development workflow for the developer team."
+      ]
+    },
+    {
+      "kind": "experience",
       "period": "Jul 2025 - Present",
-      "title": "Data Annotator",
+      "title": "AI Data Reviewer",
       "org": "DataAnnotation",
+      "orgUrl": "https://www.dataannotation.tech/",
       "summary": "Assess machine learning model outputs across text, reasoning, and code tasks using structured rubrics and technical review.",
       "bullets": [
-        "Evaluate outputs for correctness, reasoning quality, instruction adherence, and code quality.",
-        "Provide detailed feedback on efficiency, edge cases, and implementation quality.",
-        "Support model improvement by turning qualitative observations into consistent evaluation signals."
+        "Evaluate code, reasoning, and text-generation outputs for correctness, efficiency, instruction adherence, and edge-case handling using structured scoring rubrics.",
+        "Deliver technical feedback on model outputs, directly supporting software-quality improvement and iterative model refinement."
       ]
     },
     {
       "kind": "experience",
       "period": "Apr 2025 - Jul 2025",
-      "title": "Data Science Intern (Capstone Project)",
+      "title": "Solutions Architect (Capstone)",
       "org": "ALS Geoanalytics",
-      "summary": "Built an emissions-aware Python framework for deep learning workflows and benchmarked it against existing tools.",
+      "orgUrl": "https://www.alsglobal.com/en/geoanalytics",
+      "summary": "Built an emissions-aware Python framework and improved dashboard workflows for deep learning and regional emissions analysis.",
       "bullets": [
-        "Designed a Python package for tracking carbon emissions from deep learning models with roughly 85% measurement accuracy versus existing packages.",
-        "Integrated the framework into Python and PyTorch workflows to support real adoption by model-building teams.",
-        "Connected real-time carbon-intensity APIs for hourly regional emissions updates.",
-        "Tracked reduction techniques such as pruning and quantization that lowered training footprint by up to 20%."
+        "Improved UI/UX for a carbon emissions dashboard tracking regional emissions across Canadian provinces, making trends and workflow impacts easier to interpret.",
+        "Containerized development and testing with Docker and maintained automated CI/CD workflows using GitHub Actions for reproducible package delivery.",
+        "Built an end-to-end Python pipeline integrating specialized Python workflows, PyTorch training loops, and real-time carbon intensity APIs.",
+        "Designed, developed, and benchmarked a Python package for measuring carbon emissions from large-scale deep learning workflows, achieving 85% accuracy compared to existing packages.",
+        "Implemented tracking for optimization techniques including pruning and quantization, measuring up to a 20% reduction in model training carbon footprint."
       ]
     },
     {
       "kind": "experience",
       "period": "Sep 2021 - Aug 2024",
-      "title": "Digital Transformation Analyst - ICT Services Division",
+      "title": "Solutions Architect",
       "org": "Ministry of Digital Transformation",
-      "summary": "Delivered ICT deployment, operational reporting, technical support, analysis, and web implementation work across ministry services.",
+      "orgUrl": "https://mpaai.gov.tt/general-reports/digital-transformation-strategy-2024-2027",
+      "summary": "Delivered ICT deployment, website development, infrastructure support, testing, and open-source tooling across ministry services.",
       "bullets": [
-        "Configured, deployed, and maintained Ubuntu environments for 200+ staff, reducing onboarding time by 40%.",
-        "Implemented an asset management system with LDAP and Active Directory integration, improving tracking accuracy and deployment efficiency by 35%.",
-        "Collected, cleaned, and analyzed operational and engagement data using SQL to evaluate ICT Access Centre performance and guide strategy.",
-        "Engineered and deployed ICT Access Centres in 8 communities, expanding digital access to 1,500+ residents.",
-        "Developed and maintained ministry web properties using HTML, CSS, JavaScript, PHP, XML, and XSLT."
+        "Developed and deployed the Ministry website using HTML, CSS, JavaScript, PHP, XML, and XSLT while collaborating across teams in agile workflows.",
+        "Conducted bug testing, responsiveness testing, and system validation for Ministry digital initiatives, improving reliability and usability before deployment.",
+        "Implemented and maintained an open-source asset management system with Active Directory integration, improving tracking accuracy and deployment efficiency by 35%.",
+        "Configured, deployed, and maintained Ubuntu 20.04 environments for 200+ staff using Bash scripting and network imaging, reducing onboarding time by 40%.",
+        "Engineered ICT Access Centre technology deployments across 8 communities, delivering hardware and open-source software solutions to support 1,500+ residents.",
+        "Provided Tier 0-3 technical support across hardware, software, and network issues, strengthening troubleshooting skills across production environments."
       ]
     },
     {
       "kind": "experience",
       "period": "Jun 2020 - Aug 2020",
-      "title": "Intern",
+      "title": "Software Engineer",
       "org": "Republic Bank - Information Technology Management Division",
-      "summary": "Supported data cleanup, internal tooling, and user recertification work for the credit card support team.",
+      "orgUrl": "https://republictt.com/",
+      "summary": "Supported secure database interfaces, data cleanup, and user recertification work for the Production Support - Credit Card team.",
       "bullets": [
-        "Cleaned and transformed large Excel datasets with Python and pandas for ingestion into an internal SQL database.",
-        "Built a secure Java and JDBC interface in Apache NetBeans so administrators could manage records without backend access."
+        "Designed and implemented a secure Java/JDBC front-end interface in Apache NetBeans, allowing administrators to manage database records without direct backend access.",
+        "Supported a user recertification and database clean-up project, improving record accuracy and reducing administrative overhead.",
+        "Cleaned and transformed large Excel datasets using Python and pandas for ingestion into an internal SQL database, improving accessibility for analytics users."
       ]
+    },
+    {
+      "kind": "experience",
+      "period": "Oct 2017 - Jul 2018",
+      "title": "Support Associate",
+      "org": "Republic Bank",
+      "orgUrl": "https://republictt.com/",
+      "summary": "Built early financial-services operations experience in a customer-facing support environment.",
+      "bullets": []
     }
   ],
   "education": [
     {
       "title": "M.Sc. Data Science",
       "org": "University of British Columbia",
+      "orgUrl": "https://www.ubc.ca/",
       "detail": "GPA: 4.33",
       "year": "2025"
     },
     {
       "title": "B.Sc. Computer Science, First Class Honours",
-      "org": "University of the West Indies",
+      "org": "University of the West Indies, St. Augustine Campus",
+      "orgUrl": "https://sta.uwi.edu/",
       "detail": "GPA: 4.23",
       "year": "2021"
     }
   ],
   "skills": [
     {
-      "category": "Backend & Application Development",
-      "summary": "Core engineering tools for APIs, internal tools, and product delivery.",
+      "category": "Languages",
+      "summary": "Programming and scripting languages used across software, data, systems, and web work.",
       "items": [
         "Python",
         "Java",
+        "JavaScript",
+        "C",
+        "C++",
+        "C#",
+        "SQL",
+        "Bash",
+        "PHP",
+        "Dart",
+        "XSLT"
+      ]
+    },
+    {
+      "category": "Backend & APIs",
+      "summary": "Core tools for API-enabled applications, backend services, and database interfaces.",
+      "items": [
         "Flask",
-        "Spring Boot",
         "Node.js",
         "Express.js",
+        "Spring Boot",
+        "ASP.NET",
         "REST APIs",
-        "HTML/CSS/JavaScript"
+        "JDBC",
+        "SQLAlchemy",
+        "API Requests"
       ]
     },
     {
-      "category": "Data Analysis & Reporting",
-      "summary": "Tools I use to clean data, analyze trends, automate workflows, and communicate findings.",
+      "category": "Frontend & Web",
+      "summary": "Web technologies used for public sites, internal applications, and responsive interfaces.",
       "items": [
-        "SQL",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Angular",
+        "Progressive Web Apps",
+        "Responsive Design",
+        "XML",
+        "XSLT"
+      ]
+    },
+    {
+      "category": "Data & Databases",
+      "summary": "Database and analysis tools for cleaning, modeling, querying, and reporting.",
+      "items": [
+        "MySQL",
+        "PostgreSQL",
+        "Oracle",
+        "SQLite",
         "Pandas",
         "NumPy",
-        "Power BI",
-        "Matplotlib",
-        "seaborn",
-        "Data Cleaning",
-        "A/B Testing"
+        "Database Design",
+        "CRUD Operations",
+        "PHPMyAdmin",
+        "Excel Data Workflows"
       ]
     },
     {
-      "category": "ML & Modeling",
-      "summary": "Applied machine learning, model evaluation, and experimentation experience.",
+      "category": "Cloud, DevOps & Systems",
+      "summary": "Infrastructure, cloud, CI/CD, and Linux tooling that support reliable delivery.",
+      "items": [
+        "AWS S3",
+        "AWS EC2",
+        "AWS Lambda",
+        "Docker",
+        "GitHub Actions CI/CD",
+        "Git",
+        "Heroku",
+        "Apache",
+        "Ubuntu",
+        "Proxmox VE",
+        "LDAP / Active Directory",
+        "Postman"
+      ]
+    },
+    {
+      "category": "ML, Robotics & Quality",
+      "summary": "Specialized tooling for applied ML, robotics simulation, validation, and delivery quality.",
       "items": [
         "scikit-learn",
-        "PyTorch",
-        "CNNs",
-        "Transformers",
-        "SHAP",
-        "Feature Engineering",
-        "Model Evaluation",
-        "NLP"
-      ]
-    },
-    {
-      "category": "Systems & Delivery",
-      "summary": "Infrastructure, cloud, and workflow tooling that support reliable delivery.",
-      "items": [
-        "Linux / Ubuntu",
-        "Docker",
-        "GitHub Actions",
-        "AWS",
-        "Azure",
-        "Bash",
-        "MySQL",
-        "PostgreSQL"
+        "PyTorch Workflow Integration",
+        "Model Deployment",
+        "Model Monitoring",
+        "ROS",
+        "Gazebo",
+        "Bug Testing",
+        "System Validation",
+        "Code Review",
+        "Edge-case Analysis",
+        "Technical Documentation",
+        "Prompt Engineering"
       ]
     }
   ],
   "certifications": [
     {
-      "title": "Microsoft Office Specialist - Microsoft Word",
-      "year": "2019"
-    },
-    {
-      "title": "Microsoft Office Specialist - Microsoft Excel",
-      "year": "2021"
-    },
-    {
-      "title": "Project Management Fundamentals",
+      "title": "Project Management Fundamentals & Applications",
       "year": "2023"
-    },
-    {
-      "title": "Project Management Applications",
-      "year": "2023"
-    },
-    {
-      "title": "IBM - Introduction to Artificial Intelligence",
-      "year": "2024"
     },
     {
       "title": "IBM - Generative AI: Introduction and Applications",
@@ -2042,6 +2160,16 @@
       "url": "#",
       "image": "https://geographical.co.uk/wp-content/uploads/carbon-dioxide-emissions-title.jpg",
       "status": "Private Case Study",
+      "links": [
+        {
+          "label": "ALS Geoanalytics",
+          "url": "https://www.alsglobal.com/en/geoanalytics"
+        },
+        {
+          "label": "UBC",
+          "url": "https://www.ubc.ca/"
+        }
+      ],
       "tags": [
         "Python",
         "Sustainability",
@@ -2057,10 +2185,31 @@
       "bestFor": "Analytics / NLP",
       "url": "https://github.com/UBC-MDS/dsresumatch",
       "image": "https://raw.githubusercontent.com/UBC-MDS/dsresumatch/refs/heads/project_logo/docs/logo.png",
+      "links": [
+        {
+          "label": "UBC MDS",
+          "url": "https://masterdatascience.ubc.ca/"
+        }
+      ],
       "tags": [
         "NLP",
         "Python",
         "Hiring Tools"
+      ]
+    },
+    {
+      "title": "CariVoice",
+      "year": "2026",
+      "desc": "AI-assisted transcription and image-supported storytelling system for Caribbean folklore stories and plays.",
+      "detail": "Built around LLM-enabled speech transcription and supporting image workflows, with a primary use case of preserving and presenting Caribbean folklore through narrated stories and plays.",
+      "impact": "AI media workflows, speech transcription, and cultural storytelling",
+      "bestFor": "AI Systems",
+      "url": "https://github.com/OAOverflowAnalytics/CariVoice",
+      "image": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1200&q=80",
+      "tags": [
+        "LLM",
+        "Speech-to-Text",
+        "AI Media"
       ]
     },
     {
@@ -2102,6 +2251,12 @@
       "bestFor": "Analytics",
       "url": "https://github.com/UBC-MDS/wine_quality_predictor_group1",
       "image": "https://raw.githubusercontent.com/Masterx-AI/Project_Wine_Quality_Investigation/main/wq.jpg",
+      "links": [
+        {
+          "label": "UBC MDS",
+          "url": "https://masterdatascience.ubc.ca/"
+        }
+      ],
       "tags": [
         "Classification",
         "Pipelines",
@@ -2117,6 +2272,12 @@
       "bestFor": "Machine Learning",
       "url": "https://github.com/SimplyTim/NIH-Chest-XRay-Classifier",
       "image": "https://media.post.rvohealth.io/wp-content/uploads/sites/3/2022/08/heart-chest-x-ray-thumb.png",
+      "links": [
+        {
+          "label": "UBC Medicine Datathon",
+          "url": "https://datascienceandhealth.ubc.ca/events/ubc-medicine-datathon"
+        }
+      ],
       "tags": [
         "Deep Learning",
         "Computer Vision",
@@ -2131,7 +2292,17 @@
       "impact": "Systems thinking, robotics, and engineering fundamentals",
       "bestFor": "Engineering",
       "url": "https://youtu.be/JDTCNuB09mc",
-      "image": "https://images.unsplash.com/photo-1581092160607-ee22731d8f5d?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://assets.robotsguide.com/images/7p2whiua/production/4515f5b0a64a019e7f05b3c590e22eb97d6df911-2048x1536.jpg?auto=format&w=1200",
+      "links": [
+        {
+          "label": "Virtana",
+          "url": "https://www.virtanatech.com/"
+        },
+        {
+          "label": "Mecademic Meca500",
+          "url": "https://robotsguide.com/robots/meca500/"
+        }
+      ],
       "tags": [
         "ROS",
         "Gazebo",
@@ -2205,6 +2376,7 @@
     const modalTitle = document.getElementById("modal-title");
     const modalStatus = document.getElementById("modal-status");
     const modalTags = document.getElementById("modal-tags");
+    const modalRelatedLinks = document.getElementById("modal-related-links");
     const modalDesc = document.getElementById("modal-desc");
     const modalExtra = document.getElementById("modal-extra");
     const modalLink = document.getElementById("modal-link");
@@ -2219,6 +2391,83 @@
       }
 
       return /^https?:\/\//i.test(url) ? url : `https://${url}`;
+    }
+
+    function createExternalLinkMarkup(label, url, className = "entity-link") {
+      const resolvedUrl = normalizeExternalUrl(url);
+
+      if (!resolvedUrl) {
+        return label || "";
+      }
+
+      return `<a class="${className}" href="${resolvedUrl}" target="_blank" rel="noopener noreferrer">${label || resolvedUrl}</a>`;
+    }
+
+    function linkifyText(text, links) {
+      const candidates = (Array.isArray(links) ? links : [])
+        .map(link => ({
+          label: link.label || "",
+          url: normalizeExternalUrl(link.url)
+        }))
+        .filter(link => link.label && link.url)
+        .sort((a, b) => b.label.length - a.label.length);
+
+      if (!text || !candidates.length) {
+        return text || "";
+      }
+
+      let segments = [{ text }];
+
+      candidates.forEach(link => {
+        segments = segments.flatMap(segment => {
+          if (segment.url) {
+            return [segment];
+          }
+
+          const parts = [];
+          let remaining = segment.text;
+          let index = remaining.indexOf(link.label);
+
+          while (index !== -1) {
+            if (index > 0) {
+              parts.push({ text: remaining.slice(0, index) });
+            }
+
+            parts.push({ text: link.label, url: link.url });
+            remaining = remaining.slice(index + link.label.length);
+            index = remaining.indexOf(link.label);
+          }
+
+          if (remaining) {
+            parts.push({ text: remaining });
+          }
+
+          return parts.length ? parts : [segment];
+        });
+      });
+
+      return segments.map(segment => (
+        segment.url
+          ? createExternalLinkMarkup(segment.text, segment.url)
+          : segment.text
+      )).join("");
+    }
+
+    function createProjectLinkAnchors(links) {
+      if (!Array.isArray(links) || !links.length) {
+        return "";
+      }
+
+      return links
+        .map(link => createExternalLinkMarkup(link.label, link.url, "project-link"))
+        .filter(Boolean)
+        .join("");
+    }
+
+    function createProjectLinks(links) {
+      const linkMarkup = createProjectLinkAnchors(links);
+
+      return linkMarkup ? `<div class="project-link-list">${linkMarkup}</div>` : "";
     }
 
     function formatKindLabel(kind) {
@@ -2307,6 +2556,7 @@
       const row = document.createElement("article");
       row.className = "timeline-item reveal";
       row.style.setProperty("--card-accent", palette[index % palette.length]);
+      const orgMarkup = createExternalLinkMarkup(item.org, item.orgUrl);
 
       const bullets = Array.isArray(item.bullets) && item.bullets.length
         ? `<ul class="timeline-bullets">${item.bullets.map(entry => `
@@ -2324,7 +2574,7 @@
           <div class="timeline-card">
             <span class="kind-badge kind-${item.kind || "experience"}">${formatKindLabel(item.kind)}</span>
             <h3 class="timeline-title">${item.title || ""}</h3>
-            <p class="timeline-org">${item.org || ""}</p>
+            <p class="timeline-org">${orgMarkup}</p>
             <p class="timeline-summary">${item.summary || ""}</p>
             ${bullets}
           </div>
@@ -2371,10 +2621,11 @@
       const row = document.createElement("article");
       row.className = "cert-item reveal";
       row.style.setProperty("--card-accent", palette[index % palette.length]);
+      const orgMarkup = createExternalLinkMarkup(item.org, item.orgUrl, "credential-sub");
       row.innerHTML = `
         <div class="credential-main">
           <span class="cert-title">${item.title || ""}</span>
-          <span class="credential-sub">${item.org || ""}</span>
+          ${orgMarkup}
           <span class="credential-detail">${item.detail || ""}</span>
         </div>
         <span class="cert-year">${item.year || ""}</span>
@@ -2424,6 +2675,8 @@
       const resolvedUrl = normalizeExternalUrl(project.url);
       const isPrivate = !resolvedUrl;
       const tags = Array.isArray(project.tags) ? project.tags : [];
+      const projectLinks = createProjectLinks(project.links);
+      const detailMarkup = linkifyText(project.detail || project.impact || "", project.links);
 
       featuredProject.style.backgroundImage = `url('${project.image || ""}')`;
       featuredProject.style.setProperty("--card-accent", palette[index % palette.length]);
@@ -2435,10 +2688,11 @@
           </div>
           <h3 class="featured-title">${project.title || ""}</h3>
           <p class="project-summary">${project.desc || ""}</p>
-          <p class="featured-impact">${project.detail || project.impact || ""}</p>
+          <p class="featured-impact">${detailMarkup}</p>
           <div class="tag-row">
             ${tags.map(tag => `<span class="tag-chip">${tag}</span>`).join("")}
           </div>
+          ${projectLinks}
           <div class="hero-actions" style="margin-top: 0.8rem;">
             <button class="action action-primary" type="button" id="featured-open">${isPrivate ? "View Case Study" : "View Project"}</button>
             ${resolvedUrl ? `<a class="action action-secondary" href="${resolvedUrl}" target="_blank" rel="noopener noreferrer">Open Link</a>` : ""}
@@ -2501,8 +2755,8 @@
     }
 
     function applyResumeLinks(path, downloadName) {
-      const resolvedPath = path || "assets/Timothy%20Singh%20-%20CV%20Full.pdf";
-      const resolvedName = downloadName || "Timothy-Singh-CV.pdf";
+      const resolvedPath = path || "assets/resume.pdf";
+      const resolvedName = downloadName || "Timothy-Singh-Resume.pdf";
 
       resumeLinks.forEach(link => {
         link.href = resolvedPath;
@@ -2535,8 +2789,8 @@
 
       const resolvedName = profile.name || "Timothy Singh";
       brandName.textContent = resolvedName;
-      heroLabel.textContent = profile.heroLabel || "Software Engineering x Data Analytics";
-      heroTitle.textContent = profile.heroTitle || "I build dependable software, automate messy workflows, and turn data into useful decisions.";
+      heroLabel.textContent = profile.heroLabel || "";
+      heroTitle.textContent = profile.heroTitle || "";
       heroSummary.textContent = profile.heroSummary || "";
       profileRole.textContent = profile.role || "";
       availabilityPill.textContent = profile.availability || "Open to technical roles.";
@@ -2674,6 +2928,7 @@
       const resolvedUrl = normalizeExternalUrl(project.url);
       const isPrivate = !resolvedUrl;
       const tags = Array.isArray(project.tags) ? project.tags : [];
+      const detailMarkup = linkifyText(project.detail || "", project.links);
 
       modalThumb.style.backgroundImage = `url('${project.image || ""}')`;
       modalThumb.style.setProperty("--card-accent", palette[index % palette.length]);
@@ -2681,8 +2936,9 @@
       modalTitle.textContent = `${project.title || ""}${project.year ? ` | ${project.year}` : ""}`;
       modalStatus.textContent = project.status || (isPrivate ? "Private Case Study" : "Public Project");
       modalDesc.textContent = project.desc || "";
-      modalExtra.textContent = project.detail || "";
+      modalExtra.innerHTML = detailMarkup;
       modalTags.innerHTML = tags.map(tag => `<span class="tag-chip">${tag}</span>`).join("");
+      modalRelatedLinks.innerHTML = createProjectLinkAnchors(project.links);
 
       if (isPrivate) {
         modalLink.textContent = "Private Project";
