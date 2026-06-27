@@ -1,51 +1,51 @@
 {
   "profile": {
     "name": "Timothy Singh",
-    "role": "Software Engineer | Solutions Architect",
-    "heroSummary": "Software Engineer / Solutions Architect with an M.Sc. in Data Science from UBC (GPA: 4.33), a First Class Honours B.Sc. in Computer Science, and 4+ years of technical delivery across government, financial services, and applied research. I build Python packages, REST/API-enabled applications, web systems, Java/JDBC database interfaces, Linux solutions, and AI-enabled workflows that real stakeholders can use.",
-    "availability": "Open to software engineering, solutions architecture, and data/AI engineering roles.",
+    "role": "Data Engineer | Software Architect",
+    "heroSummary": "I design data pipelines, database-backed systems, cloud-enabled workflows, and reliable software foundations for teams that need clean data, maintainable architecture, and practical delivery. My background combines graduate data science training, software engineering, infrastructure support, and stakeholder-facing implementation across government, financial services, and applied research.",
+    "availability": "Open to data engineering, software architecture, and data platform roles.",
     "resumePath": "assets/resume.pdf",
     "resumeDownloadName": "Timothy-Singh-Resume.pdf",
     "focusAreas": [],
     "quickFacts": [
       {
-        "label": "Focus",
-        "value": "Software engineering and solutions architecture"
+        "label": "Experience",
+        "value": "4+ years across data, software, systems, and AI workflows"
       },
       {
-        "label": "Recent Degree",
-        "value": "M.Sc. Data Science, UBC (2025)"
+        "label": "Scope",
+        "value": "Production pipelines, databases, APIs, automation, and cloud delivery"
       },
       {
-        "label": "Core Tools",
-        "value": "Python, Java, JavaScript, SQL, AWS, Docker"
+        "label": "Education",
+        "value": "2 computing degrees with graduate data science training"
       }
     ],
-    "aboutTitle": "Reliable software, systems thinking, and applied data science are the threads that connect my work.",
+    "aboutTitle": "Data engineering, software architecture, and delivery discipline are the center of my work.",
     "aboutSummary": [
-      "For software engineering teams, I bring hands-on backend and application experience across Python, Java, JavaScript, Flask, Node.js, Express.js, REST APIs, SQL, and Java/JDBC interfaces.",
-      "For solutions and AI-enabled systems work, I bring Linux deployment, Docker, GitHub Actions CI/CD, AWS, system validation, and experience translating technical requirements into usable workflows.",
-      "My data science background adds SQL, pandas, scikit-learn, PyTorch workflow integration, model evaluation, reporting, and clear stakeholder communication."
+      "For data engineering teams, I bring experience designing ETL/ELT pipelines, automated reporting, schema-optimized relational databases, data quality checks, API integration, and reproducible deployment workflows.",
+      "For software architecture work, I connect databases, APIs, cloud infrastructure, CI/CD, Linux environments, and stakeholder requirements into systems that are maintainable and usable.",
+      "My software foundation includes Python, SQL, Java, JavaScript, Flask, Node.js, Express.js, Java/JDBC interfaces, Docker, GitHub Actions, AWS, Ubuntu, and testing/validation practices."
     ],
     "impactPoints": [
       "Career signal: 4+ years of technical delivery, a UBC M.Sc. Data Science GPA of 4.33, and a First Class Honours Computer Science GPA of 4.23.",
-      "Engineering toolkit spans Python, Java, JavaScript, Flask, Node.js, Express.js, Spring Boot, SQL, Docker, GitHub Actions, AWS, and Linux.",
-      "Hands-on across REST/API applications, Python packages, web systems, Java/JDBC database interfaces, CI/CD, and technical support.",
-      "Comfortable translating requirements into reliable software for government, financial services, and applied research stakeholders."
+      "Data engineering toolkit spans ETL/ELT pipelines, SQL stored procedures, schema design, indexing, data validation, Snowflake, automated reporting, and API integration.",
+      "Architecture toolkit spans REST APIs, database-backed applications, Docker, AWS, GitHub Actions, Linux infrastructure, LDAP / Active Directory, and system validation.",
+      "Comfortable owning the path from messy operational requirements to tested data products, internal tools, dashboards, and production workflows."
     ],
-    "contactHeading": "Open to software engineering, solutions architecture, and data/AI engineering roles.",
-    "contactSummary": "If you are hiring for software engineering or solutions architecture roles that value Python, Java, APIs, cloud tooling, Linux systems, and clear stakeholder communication, I would love to connect. My strongest fit is with teams that value ownership, technical breadth, and careful delivery."
+    "contactHeading": "Open to data engineering, software architecture, and data platform roles.",
+    "contactSummary": "If you are hiring for roles that need data pipelines, database design, API-enabled software, cloud workflows, CI/CD automation, and careful stakeholder communication, I would love to connect. My strongest fit is with teams that value ownership, technical breadth, and reliable delivery."
   },
   "metrics": [
     {
       "value": "4+",
       "label": "Years technical delivery",
-      "detail": "Software, analytics, infrastructure, and applied research experience across government, finance, and AI workflows."
+      "detail": "Data, software, infrastructure, and applied research experience across government, finance, and AI workflows."
     },
     {
       "value": "40+",
       "label": "Technologies used",
-      "detail": "Hands-on toolkit spanning Python, Java, JavaScript, SQL, REST APIs, Docker, AWS, Linux, databases, and ML workflows."
+      "detail": "Hands-on toolkit spanning data pipelines, databases, APIs, cloud tooling, Linux systems, automation, and ML workflows."
     },
     {
       "value": "4.33",
@@ -60,30 +60,30 @@
   ],
   "highlights": [
     {
-      "title": "Software Engineering Fit",
-      "desc": "Strong match for backend, automation, and product engineering roles that need someone who can build, debug, and ship.",
+      "title": "Data Engineering Fit",
+      "desc": "Strong match for roles focused on production data pipelines, relational database design, reporting automation, and data quality.",
       "points": [
-        "Python, Java, JavaScript, Flask, Node.js, Express.js, REST APIs, JDBC, SQLAlchemy, and database-backed applications.",
-        "Experience building Python packages, internal tools, web systems, and Java/JDBC interfaces used by real stakeholders.",
-        "Validation mindset from support and production environments: code review, edge-case analysis, testing, and documentation."
+        "Designed Python data collection and measurement pipelines that capture, aggregate, and report carbon emissions from large-scale ML workflows.",
+        "Built automated reporting with SQL stored procedures and temporal queues, plus schema-normalized MySQL systems with targeted indexing.",
+        "Hands-on with Snowflake, PostgreSQL, MySQL, SQLite, SQLAlchemy, data validation, ETL testing, API integration, and dashboard-ready datasets."
       ]
     },
     {
-      "title": "Solutions Architecture Fit",
-      "desc": "Strong match for roles that connect requirements, infrastructure, APIs, data, and deployment workflows into maintainable systems.",
+      "title": "Software Architecture Fit",
+      "desc": "Strong match for roles that connect databases, APIs, infrastructure, CI/CD, and user workflows into maintainable systems.",
       "points": [
-        "Hands-on with AWS, Docker, GitHub Actions CI/CD, Ubuntu, Bash, LDAP / Active Directory, network imaging, and system validation.",
-        "Experience designing workflows that bridge technical implementation and non-technical stakeholder needs.",
-        "Comfortable owning the path from requirement discovery to tested, documented delivery."
+        "Experience building REST/API-enabled applications, Python packages, web systems, Java/JDBC interfaces, and database-backed tools.",
+        "Hands-on with Docker, AWS, GitHub Actions CI/CD, Ubuntu Server, Proxmox VE, Nextcloud, LDAP / Active Directory, and system validation.",
+        "Comfortable translating operational requirements into tested systems with clear ownership boundaries and practical deployment paths."
       ]
     },
     {
-      "title": "Data & AI Systems Fit",
-      "desc": "A data science foundation paired with recent AI, ML, and analytics work.",
+      "title": "Delivery & Quality Fit",
+      "desc": "A production-minded foundation shaped by support work, technical review, documentation, and stakeholder-facing implementation.",
       "points": [
-        "UBC M.Sc. Data Science, First Class Honours in Computer Science, and applied ML project experience.",
-        "Python, SQL, pandas, scikit-learn, PyTorch workflow integration, model evaluation, reporting, and dashboard work.",
-        "Recent AI content pipeline work uses Python/API requests with AWS processing and storage."
+        "Validated ministry systems through bug testing, responsiveness testing, system validation, and technical documentation.",
+        "Review code, reasoning, and text-generation model outputs for correctness, efficiency, instruction adherence, and edge-case handling.",
+        "Bring a delivery mindset from government, financial services, applied research, AI workflows, and community technology deployments."
       ]
     }
   ],
@@ -94,7 +94,7 @@
       "title": "AI Content Development Assistant",
       "org": "Ministry of Education",
       "orgUrl": "https://www.moe.gov.tt/",
-      "summary": "Build and support AI-enabled media generation workflows using Python, API integrations, AWS, GitHub, and CI/CD practices.",
+      "summary": "Build AI-enabled media generation pipelines and repository workflows using Python, APIs, AWS, GitHub, and CI/CD practices.",
       "bullets": [
         "Designed and built an agentic AI video and audio generation pipeline using Python scripts and API requests to synchronize generated media while leveraging AWS for processing and storage.",
         "Managed a production GitHub repository by overseeing team permissions, maintaining GitHub Actions CI/CD workflows, and establishing a structured development workflow for the developer team."
@@ -106,7 +106,7 @@
       "title": "AI Data Reviewer",
       "org": "DataAnnotation",
       "orgUrl": "https://www.dataannotation.tech/",
-      "summary": "Assess machine learning model outputs across text, reasoning, and code tasks using structured rubrics and technical review.",
+      "summary": "Assess machine learning model outputs across code, reasoning, and text tasks using structured technical review.",
       "bullets": [
         "Evaluate code, reasoning, and text-generation outputs for correctness, efficiency, instruction adherence, and edge-case handling using structured scoring rubrics.",
         "Deliver technical feedback on model outputs, directly supporting software-quality improvement and iterative model refinement."
@@ -115,45 +115,45 @@
     {
       "kind": "experience",
       "period": "Apr 2025 - Jul 2025",
-      "title": "Solutions Architect (Capstone)",
+      "title": "Data Engineer / Data Science Intern",
       "org": "ALS Geoanalytics",
       "orgUrl": "https://www.alsglobal.com/en/geoanalytics",
-      "summary": "Built an emissions-aware Python framework and improved dashboard workflows for deep learning and regional emissions analysis.",
+      "summary": "Built a Dockerized real-time data ingestion and measurement pipeline for deep learning emissions analysis.",
       "bullets": [
-        "Improved UI/UX for a carbon emissions dashboard tracking regional emissions across Canadian provinces, making trends and workflow impacts easier to interpret.",
-        "Containerized development and testing with Docker and maintained automated CI/CD workflows using GitHub Actions for reproducible package delivery.",
-        "Built an end-to-end Python pipeline integrating specialized Python workflows, PyTorch training loops, and real-time carbon intensity APIs.",
-        "Designed, developed, and benchmarked a Python package for measuring carbon emissions from large-scale deep learning workflows, achieving 85% accuracy compared to existing packages.",
-        "Implemented tracking for optimization techniques including pruning and quantization, measuring up to a 20% reduction in model training carbon footprint."
+        "Designed and built a Python data collection and measurement pipeline to capture, aggregate, and report carbon emissions metrics from large-scale deep learning workloads, achieving 85% measurement accuracy against existing benchmarks.",
+        "Containerized the pipeline using Docker, ensuring reproducible deployment across research and production environments with no environment-specific configuration drift.",
+        "Integrated real-time carbon intensity API feeds to ingest and process hourly regional emissions data, enabling dynamic, location-aware emission calculations within active PyTorch training pipelines.",
+        "Maintained CI/CD workflows via GitHub Actions, automating testing and deployment of pipeline updates throughout the internship lifecycle.",
+        "Instrumented training pipelines with emission-reduction tracking for pruning and quantization, demonstrating up to a 20% reduction in carbon footprint."
       ]
     },
     {
       "kind": "experience",
       "period": "Sep 2021 - Aug 2024",
-      "title": "Solutions Architect",
+      "title": "Digital Transformation Analyst",
       "org": "Ministry of Digital Transformation",
       "orgUrl": "https://mpaai.gov.tt/general-reports/digital-transformation-strategy-2024-2027",
-      "summary": "Delivered ICT deployment, website development, infrastructure support, testing, and open-source tooling across ministry services.",
+      "summary": "Delivered reporting pipelines, database systems, dashboards, Linux infrastructure, and community ICT deployments.",
       "bullets": [
-        "Developed and deployed the Ministry website using HTML, CSS, JavaScript, PHP, XML, and XSLT while collaborating across teams in agile workflows.",
-        "Conducted bug testing, responsiveness testing, and system validation for Ministry digital initiatives, improving reliability and usability before deployment.",
-        "Implemented and maintained an open-source asset management system with Active Directory integration, improving tracking accuracy and deployment efficiency by 35%.",
-        "Configured, deployed, and maintained Ubuntu 20.04 environments for 200+ staff using Bash scripting and network imaging, reducing onboarding time by 40%.",
-        "Engineered ICT Access Centre technology deployments across 8 communities, delivering hardware and open-source software solutions to support 1,500+ residents.",
-        "Provided Tier 0-3 technical support across hardware, software, and network issues, strengthening troubleshooting skills across production environments."
+        "Designed and built an automated reporting pipeline using SQL stored procedures and temporal queues, replacing manual reporting cycles and enabling scheduled performance tracking across ICT Access Centres.",
+        "Architected a MySQL asset-tracking database on Linux with normalization and targeted indexing to maintain fast query response as record volume grew.",
+        "Integrated the asset management system with LDAP / Active Directory, automating user-role synchronization and improving tracking accuracy and deployment efficiency by 35%.",
+        "Built Power BI dashboards connected to operational databases, giving ministry executives real-time visibility into resource allocation and ICT programme performance.",
+        "Led migration of ministry data and documents to a self-hosted Nextcloud instance on a Proxmox VE hypervisor, implementing role-based access controls to support data governance.",
+        "Automated Ubuntu provisioning for 200+ workstations via Bash scripting and network imaging, reducing per-machine onboarding time by 40%."
       ]
     },
     {
       "kind": "experience",
       "period": "Jun 2020 - Aug 2020",
-      "title": "Software Engineer",
+      "title": "IT Intern / Software Engineer",
       "org": "Republic Bank - Information Technology Management Division",
       "orgUrl": "https://republictt.com/",
-      "summary": "Supported secure database interfaces, data cleanup, and user recertification work for the Production Support - Credit Card team.",
+      "summary": "Built ETL/data quality workflows and a secure Java/JDBC database interface for the Production Support - Credit Card team.",
       "bullets": [
-        "Designed and implemented a secure Java/JDBC front-end interface in Apache NetBeans, allowing administrators to manage database records without direct backend access.",
-        "Supported a user recertification and database clean-up project, improving record accuracy and reducing administrative overhead.",
-        "Cleaned and transformed large Excel datasets using Python and pandas for ingestion into an internal SQL database, improving accessibility for analytics users."
+        "Designed and executed an ETL pipeline using Python and pandas to extract, clean, transform, validate, and load large Excel datasets for analytics use.",
+        "Built a secure Java/JDBC front-end interface in Apache NetBeans, allowing administrators to manage database records without direct backend access.",
+        "Supported a user recertification and database cleanup project, improving record accuracy and reducing administrative overhead."
       ]
     },
     {
@@ -184,25 +184,60 @@
   ],
   "skills": [
     {
-      "category": "Languages",
-      "summary": "Programming and scripting languages used across software, data, systems, and web work.",
+      "category": "Languages & Querying",
+      "summary": "Programming, scripting, and query languages used across data platforms, applications, and infrastructure.",
       "items": [
         "Python",
+        "SQL",
+        "Bash",
+        "R",
         "Java",
         "JavaScript",
+        "PHP",
         "C",
         "C++",
         "C#",
-        "SQL",
-        "Bash",
-        "PHP",
         "Dart",
         "XSLT"
       ]
     },
     {
-      "category": "Backend & APIs",
-      "summary": "Core tools for API-enabled applications, backend services, and database interfaces.",
+      "category": "Data Engineering",
+      "summary": "Pipeline and modeling capabilities for reliable ingestion, transformation, reporting, and data quality.",
+      "items": [
+        "ETL/ELT Pipelines",
+        "SQL Stored Procedures",
+        "SQL Routines",
+        "Schema Design",
+        "Normalization",
+        "Indexing",
+        "Query Optimization",
+        "Data Modeling",
+        "API Integration",
+        "Automated Reporting",
+        "Data Validation",
+        "ETL Pipeline Testing"
+      ]
+    },
+    {
+      "category": "Databases & Warehousing",
+      "summary": "Relational databases, warehouse tooling, and application data access patterns.",
+      "items": [
+        "MySQL",
+        "PostgreSQL",
+        "SQLite",
+        "Oracle",
+        "Snowflake",
+        "SQLAlchemy",
+        "Database Design",
+        "CRUD Operations",
+        "PHPMyAdmin",
+        "Excel Data Workflows"
+      ]
+    },
+    {
+      "category": "Software Architecture & APIs",
+      "summary": "Tools for API-enabled applications, backend services, web systems, and database-backed interfaces.",
       "items": [
         "Flask",
         "Node.js",
@@ -211,43 +246,17 @@
         "ASP.NET",
         "REST APIs",
         "JDBC",
-        "SQLAlchemy",
-        "API Requests"
-      ]
-    },
-    {
-      "category": "Frontend & Web",
-      "summary": "Web technologies used for public sites, internal applications, and responsive interfaces.",
-      "items": [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
         "Angular",
         "Progressive Web Apps",
-        "Responsive Design",
-        "XML",
-        "XSLT"
+        "HTML5",
+        "CSS3",
+        "Postman",
+        "Technical Documentation"
       ]
     },
     {
-      "category": "Data & Databases",
-      "summary": "Database and analysis tools for cleaning, modeling, querying, and reporting.",
-      "items": [
-        "MySQL",
-        "PostgreSQL",
-        "Oracle",
-        "SQLite",
-        "Pandas",
-        "NumPy",
-        "Database Design",
-        "CRUD Operations",
-        "PHPMyAdmin",
-        "Excel Data Workflows"
-      ]
-    },
-    {
-      "category": "Cloud, DevOps & Systems",
-      "summary": "Infrastructure, cloud, CI/CD, and Linux tooling that support reliable delivery.",
+      "category": "Cloud, DevOps & Infrastructure",
+      "summary": "Infrastructure, cloud, CI/CD, and Linux tooling that support reproducible delivery.",
       "items": [
         "AWS S3",
         "AWS EC2",
@@ -255,34 +264,41 @@
         "Docker",
         "GitHub Actions CI/CD",
         "Git",
-        "Heroku",
+        "Ubuntu Server",
         "Apache",
-        "Ubuntu",
         "Proxmox VE",
+        "Nextcloud",
         "LDAP / Active Directory",
-        "Postman"
+        "Network Imaging"
       ]
     },
     {
-      "category": "ML, Robotics & Quality",
-      "summary": "Specialized tooling for applied ML, robotics simulation, validation, and delivery quality.",
+      "category": "Analytics, ML & Quality",
+      "summary": "Analysis, modeling, dashboarding, and validation tools that strengthen data products and software delivery.",
       "items": [
+        "Pandas",
+        "NumPy",
+        "Power BI",
+        "Matplotlib",
+        "Seaborn",
+        "Altair",
+        "Dash",
         "scikit-learn",
         "PyTorch Workflow Integration",
-        "Model Deployment",
-        "Model Monitoring",
-        "ROS",
-        "Gazebo",
-        "Bug Testing",
+        "XGBoost",
+        "LightGBM",
+        "SHAP",
         "System Validation",
         "Code Review",
-        "Edge-case Analysis",
-        "Technical Documentation",
-        "Prompt Engineering"
+        "Edge-case Analysis"
       ]
     }
   ],
   "certifications": [
+    {
+      "title": "Huawei Seeds for the Future Internship Programme",
+      "year": "2020"
+    },
     {
       "title": "Project Management Fundamentals & Applications",
       "year": "2023"
@@ -303,12 +319,12 @@
   "projects": [
     {
       "featured": true,
-      "title": "MTR-Framework",
+      "title": "Carbon Emissions Tracking Pipeline",
       "year": "2025",
-      "desc": "Python package to measure and track carbon emissions from deep learning workflows using runtime metrics and regional carbon-intensity APIs.",
-      "detail": "Built during a UBC capstone with ALS Geoanalytics. The framework benchmarked at roughly 85% measurement accuracy against existing tools, integrated into Python and PyTorch workflows, and supported emissions-reduction experiments such as pruning and quantization.",
-      "impact": "Production-minded Python package design and experiment tooling",
-      "bestFor": "Engineering + Data",
+      "desc": "Production Python pipeline that captures, aggregates, and reports carbon emissions from PyTorch model training using live carbon intensity data.",
+      "detail": "Built during a UBC capstone with ALS Geoanalytics. The pipeline instruments training runs, ingests hourly regional emissions data, supports pruning and quantization measurement, and was containerized with Docker and maintained through GitHub Actions CI/CD. It benchmarked at roughly 85% measurement accuracy and tracked up to a 20% reduction in model training carbon footprint.",
+      "impact": "Production data pipeline, API integration, and emissions reporting",
+      "bestFor": "Data Engineering",
       "url": "#",
       "image": "https://geographical.co.uk/wp-content/uploads/carbon-dioxide-emissions-title.jpg",
       "status": "Private Case Study",
@@ -324,17 +340,35 @@
       ],
       "tags": [
         "Python",
-        "Sustainability",
+        "Data Pipelines",
+        "Docker",
+        "APIs",
         "PyTorch"
+      ]
+    },
+    {
+      "title": "Credit Card Default Predictor",
+      "year": "2025",
+      "desc": "End-to-end data pipeline and ensemble model predicting customer default risk from roughly 30,000 historical records.",
+      "detail": "Built reproducible ingestion, feature engineering, model evaluation, and CI/CD workflows around XGBoost, LightGBM, and RandomForest models. Applied feature importance analysis and SHAP-style interpretation to understand risk drivers.",
+      "impact": "Data pipeline, feature engineering, and risk modeling",
+      "bestFor": "Data Engineering",
+      "url": "https://github.com/SimplyTim/Credit-Card-Default-Predictor",
+      "image": "https://cdn2.hubspot.net/hub/7379058/hubfs/Accepting%20a%20credit%20card%20at%20a%20terminal.png",
+      "tags": [
+        "Data Pipeline",
+        "XGBoost",
+        "LightGBM",
+        "SHAP"
       ]
     },
     {
       "title": "DSResuMatch",
       "year": "2025",
-      "desc": "Python package for analyzing resumes against job descriptions by extracting sections and scoring keyword relevance.",
-      "detail": "Designed for Data Science resume matching, with section extraction and scoring logic that can be adapted to new role profiles and keyword sets.",
-      "impact": "Python packaging, NLP pipelines, and problem framing",
-      "bestFor": "Analytics / NLP",
+      "desc": "Open-source Python package that extracts resume and job description sections, structures unstructured text, and scores keyword relevance.",
+      "detail": "Designed for Data Science resume matching, with section extraction and scoring logic that can be adapted to new role profiles and keyword sets. Published with automated testing through GitHub Actions CI/CD.",
+      "impact": "Python packaging, text pipelines, and automated testing",
+      "bestFor": "Data Products",
       "url": "https://github.com/UBC-MDS/dsresumatch",
       "image": "https://raw.githubusercontent.com/UBC-MDS/dsresumatch/refs/heads/project_logo/docs/logo.png",
       "links": [
@@ -344,9 +378,46 @@
         }
       ],
       "tags": [
-        "NLP",
-        "Python",
-        "Hiring Tools"
+        "Python Package",
+        "Text Extraction",
+        "CI/CD"
+      ]
+    },
+    {
+      "title": "Wine Quality Predictor",
+      "year": "2024",
+      "desc": "Reproducible ML pipeline for classifying wine quality from physicochemical data.",
+      "detail": "Built structured data ingestion, preprocessing, cross-validation, and model benchmarking across KNN, SVM with RBF kernel, Logistic Regression, Naive Bayes, and Decision Tree approaches.",
+      "impact": "Experiment design, pipelines, and validation",
+      "bestFor": "Analytics Engineering",
+      "url": "https://github.com/UBC-MDS/wine_quality_predictor_group1",
+      "image": "https://raw.githubusercontent.com/Masterx-AI/Project_Wine_Quality_Investigation/main/wq.jpg",
+      "links": [
+        {
+          "label": "UBC MDS",
+          "url": "https://masterdatascience.ubc.ca/"
+        }
+      ],
+      "tags": [
+        "Classification",
+        "Pipelines",
+        "Validation"
+      ]
+    },
+    {
+      "title": "Project Bloodline",
+      "year": "2020",
+      "desc": "Progressive Web Application built to encourage blood donation through a mobile-ready experience and REST-backed workflows.",
+      "detail": "Built with Angular 9.1.1 on the front end and Flask 1.0.2 on the back end using a JAM-style architecture, with authentication, REST APIs, and deployment on Heroku.",
+      "impact": "Full-stack architecture and API integration",
+      "bestFor": "Software Architecture",
+      "url": "https://project-bloodline.web.app/",
+      "image": "https://www.personalabs.com/wp-content/uploads/2023/09/close-up-unrecognizable-male-donor-donating-blood-squeezing-stress-ball-copy-space.jpg",
+      "tags": [
+        "Angular",
+        "Flask",
+        "REST APIs",
+        "PWA"
       ]
     },
     {
@@ -365,84 +436,12 @@
       ]
     },
     {
-      "title": "Project Bloodline",
-      "year": "2020",
-      "desc": "Progressive Web Application built to encourage blood donation through a mobile-ready experience and REST-backed workflows.",
-      "detail": "Built with Angular 9.1.1 on the front end and Flask 1.0.2 on the back end using a JAM-style architecture, with authentication, REST APIs, and a mobile-friendly design.",
-      "impact": "Full-stack web delivery and API integration",
-      "bestFor": "Software Engineering",
-      "url": "https://project-bloodline.web.app/",
-      "image": "https://www.personalabs.com/wp-content/uploads/2023/09/close-up-unrecognizable-male-donor-donating-blood-squeezing-stress-ball-copy-space.jpg",
-      "tags": [
-        "Angular",
-        "Flask",
-        "PWA"
-      ]
-    },
-    {
-      "title": "Credit Card Default Predictor",
-      "year": "2025",
-      "desc": "Ensemble modeling project for predicting credit card default risk from historical payment behavior.",
-      "detail": "Built on a Kaggle dataset of roughly 30,000 rows and 25 features, comparing feature-selection and feature-importance effects across XGBoost, LightGBM, and RandomForestClassifier models.",
-      "impact": "Feature engineering, model comparison, and risk analysis",
-      "bestFor": "Analytics",
-      "url": "https://github.com/SimplyTim/Credit-Card-Default-Predictor",
-      "image": "https://cdn2.hubspot.net/hub/7379058/hubfs/Accepting%20a%20credit%20card%20at%20a%20terminal.png",
-      "tags": [
-        "Risk Modeling",
-        "Feature Engineering",
-        "Ensembles"
-      ]
-    },
-    {
-      "title": "Wine Quality Predictor",
-      "year": "2024",
-      "desc": "ML classification project for predicting wine quality using physicochemical properties and repeatable modeling workflows.",
-      "detail": "Compared KNN, SVM with RBF kernel, Naive Bayes, Logistic Regression, and Decision Tree approaches using feature engineering, pipelines, and cross-validation.",
-      "impact": "Experiment design, pipelines, and validation",
-      "bestFor": "Analytics",
-      "url": "https://github.com/UBC-MDS/wine_quality_predictor_group1",
-      "image": "https://raw.githubusercontent.com/Masterx-AI/Project_Wine_Quality_Investigation/main/wq.jpg",
-      "links": [
-        {
-          "label": "UBC MDS",
-          "url": "https://masterdatascience.ubc.ca/"
-        }
-      ],
-      "tags": [
-        "Classification",
-        "Pipelines",
-        "Validation"
-      ]
-    },
-    {
-      "title": "NIH Chest X-Ray Classifier",
-      "year": "2025",
-      "desc": "Deep learning pipeline trained on thousands of chest X-rays to identify thoracic diseases and disorders.",
-      "detail": "Built during the UBC Medicine Datathon 2025 using transfer learning on DenseNet. Future improvements included image transformations and additional feature engineering.",
-      "impact": "Deep learning experimentation and team-based prototyping",
-      "bestFor": "Machine Learning",
-      "url": "https://github.com/SimplyTim/NIH-Chest-XRay-Classifier",
-      "image": "https://media.post.rvohealth.io/wp-content/uploads/sites/3/2022/08/heart-chest-x-ray-thumb.png",
-      "links": [
-        {
-          "label": "UBC Medicine Datathon",
-          "url": "https://datascienceandhealth.ubc.ca/events/ubc-medicine-datathon"
-        }
-      ],
-      "tags": [
-        "Deep Learning",
-        "Computer Vision",
-        "Healthcare"
-      ]
-    },
-    {
-      "title": "Robotic Arm Project",
+      "title": "Robotic Arm Automation",
       "year": "2021",
       "desc": "Simulation-driven robotics project using a Mecademic500 arm for precise pick-and-place operations.",
-      "detail": "Developed with ROS and Gazebo in a Linux environment in collaboration with Virtana to test motion control and automation workflows.",
-      "impact": "Systems thinking, robotics, and engineering fundamentals",
-      "bestFor": "Engineering",
+      "detail": "Developed with ROS and Gazebo in a Linux environment in collaboration with Virtana to test motion control and automation workflows. The project emphasized reproducible simulation and validation before physical workflow execution.",
+      "impact": "Systems thinking, robotics, and automation workflows",
+      "bestFor": "Software Architecture",
       "url": "https://youtu.be/JDTCNuB09mc",
       "image": "https://assets.robotsguide.com/images/7p2whiua/production/4515f5b0a64a019e7f05b3c590e22eb97d6df911-2048x1536.jpg?auto=format&w=1200",
       "links": [
@@ -458,7 +457,29 @@
       "tags": [
         "ROS",
         "Gazebo",
-        "Robotics"
+        "Docker",
+        "Automation"
+      ]
+    },
+    {
+      "title": "NIH Chest X-Ray Classifier",
+      "year": "2025",
+      "desc": "Deep learning pipeline trained on chest X-rays to identify thoracic diseases and disorders.",
+      "detail": "Built during the UBC Medicine Datathon 2025 using transfer learning on DenseNet. Future improvements included image transformations and additional feature engineering.",
+      "impact": "Deep learning experimentation and team-based prototyping",
+      "bestFor": "Machine Learning",
+      "url": "https://github.com/SimplyTim/NIH-Chest-XRay-Classifier",
+      "image": "https://media.post.rvohealth.io/wp-content/uploads/sites/3/2022/08/heart-chest-x-ray-thumb.png",
+      "links": [
+        {
+          "label": "UBC Medicine Datathon",
+          "url": "https://datascienceandhealth.ubc.ca/events/ubc-medicine-datathon"
+        }
+      ],
+      "tags": [
+        "Deep Learning",
+        "Computer Vision",
+        "Healthcare"
       ]
     }
   ],

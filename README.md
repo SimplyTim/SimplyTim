@@ -4,7 +4,7 @@
 
 <p align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&pause=1100&color=8DB6FF&center=true&vCenter=true&width=900&lines=Software+Engineer+%7C+Data+Analyst;Backend+systems%2C+analytics%2C+automation%2C+applied+ML;Building+reliable+tools+and+useful+data+products"
+    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&pause=1100&color=8DB6FF&center=true&vCenter=true&width=900&lines=Data+Engineer+%7C+Software+Architect;Data+platforms%2C+software+systems%2C+and+cloud+workflows;4%2B+years+delivery+%7C+40%2B+technologies+%7C+2+computing+degrees"
     alt="Animated typing intro"
   />
 </p>
@@ -19,44 +19,72 @@
   <a href="https://github.com/SimplyTim">
     <img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub badge" />
   </a>
+  <a href="./assets/resume.pdf">
+    <img src="https://img.shields.io/badge/Resume-Download-0F766E?style=for-the-badge&logo=readme&logoColor=white" alt="Resume badge" />
+  </a>
 </p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=SimplyTim&style=for-the-badge&color=5F71FF" alt="Profile views" />
-  <img src="https://img.shields.io/badge/Open%20to-Software%20Engineering%20%26%20Data%20Analyst%20Roles-1D4ED8?style=for-the-badge" alt="Open to work badge" />
+  <img src="https://img.shields.io/badge/Open%20to-Data%20Engineering%20%7C%20Software%20Architecture%20%7C%20Data%20Platform%20Roles-1D4ED8?style=for-the-badge" alt="Open to work badge" />
 </p>
 
 ## About Me
 
-I am a Software Engineer and Data Analyst with 4+ years of experience across software delivery, analytics, and public-sector systems. I hold a First Class Honours B.Sc. in Computer Science and an M.Sc. in Data Science from the University of British Columbia.
+I am a Data Engineer and Software Architect with an M.Sc. in Data Science from the University of British Columbia, a First Class Honours B.Sc. in Computer Science, and 4+ years of technical delivery across government, financial services, and applied research.
 
-My work sits at the intersection of backend engineering, automation, analytics, and applied machine learning. I enjoy building dependable systems, cleaning up messy workflows, and turning data into decisions people can actually use.
+I design data pipelines, database-backed systems, cloud-enabled workflows, and reliable software foundations for teams that need clean data, maintainable architecture, and practical delivery.
 
-## Current Focus
+## Profile Snapshot
 
 <table>
   <tr>
     <td width="33%">
-      <strong>Current Role</strong><br />
-      Reviewing model outputs across text, reasoning, and code tasks as a Data Annotator at DataAnnotation.
+      <strong>Data Engineering</strong><br />
+      ETL/ELT pipelines, SQL routines, schema design, normalization, indexing, query optimization, data validation, automated reporting, and API integration.
     </td>
     <td width="33%">
-      <strong>What I Build</strong><br />
-      Backend tools, reporting pipelines, RAG experiments, and practical automation for real-world teams.
+      <strong>Software Architecture</strong><br />
+      REST APIs, database-backed applications, Python packages, web systems, Java/JDBC interfaces, CI/CD workflows, and deployment-ready tooling.
     </td>
     <td width="33%">
-      <strong>What I Value</strong><br />
-      Reliable delivery, clear communication, measurable impact, and technology that solves real problems.
+      <strong>Cloud & Delivery</strong><br />
+      AWS, Docker, GitHub Actions, Ubuntu Server, Proxmox VE, Nextcloud, LDAP / Active Directory, system validation, and stakeholder communication.
+    </td>
+  </tr>
+</table>
+
+## Career Signals
+
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <strong>4+</strong><br />
+      Years technical delivery
+    </td>
+    <td align="center" width="25%">
+      <strong>40+</strong><br />
+      Technologies used
+    </td>
+    <td align="center" width="25%">
+      <strong>4.33</strong><br />
+      UBC MDS GPA
+    </td>
+    <td align="center" width="25%">
+      <strong>2</strong><br />
+      Computing degrees
     </td>
   </tr>
 </table>
 
 ## Recent Impact
 
-- Reduced onboarding time by 40% by deploying and maintaining Ubuntu environments for 200+ staff.
-- Improved asset tracking and deployment efficiency by 35% through LDAP and Active Directory integrated tooling.
-- Helped expand ICT Access Centre services to 8 communities, supporting 1,500+ residents.
-- Built an emissions tracking framework that benchmarked at roughly 85% accuracy against existing tools.
+- Built a Dockerized Python pipeline to capture, aggregate, and report carbon emissions from deep learning workloads, reaching roughly 85% measurement accuracy.
+- Integrated real-time carbon intensity API feeds into PyTorch training workflows for dynamic, location-aware emissions measurement.
+- Designed automated reporting with SQL stored procedures and temporal queues, replacing manual reporting cycles across ICT Access Centres.
+- Architected a MySQL asset-tracking database on Linux with normalization and targeted indexing, improving tracking accuracy and deployment efficiency by 35%.
+- Built Power BI dashboards connected to operational databases for real-time visibility into resource allocation and programme performance.
+- Automated Ubuntu provisioning for 200+ workstations with Bash and network imaging, reducing per-machine onboarding time by 40%.
 
 <p align="center">
   <img src="./assets/tech-flow.svg" alt="Animated tech workflow graphic" width="100%" />
@@ -65,13 +93,13 @@ My work sits at the intersection of backend engineering, automation, analytics, 
 ## Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,java,js,cpp,cs,flask,spring,nodejs,express,postgres,mysql,docker,aws,azure,linux,githubactions&perline=8" alt="Tech stack icons" />
+  <img src="https://skillicons.dev/icons?i=python,r,java,js,bash,flask,nodejs,express,angular,postgres,mysql,sqlite,docker,aws,linux,git,githubactions&perline=9" alt="Tech stack icons" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Data-pandas%20%7C%20NumPy%20%7C%20Power%20BI-0F172A?style=flat-square&logo=pandas&logoColor=white" alt="Data tools badge" />
-  <img src="https://img.shields.io/badge/ML-scikit--learn%20%7C%20PyTorch%20%7C%20Transformers-0F172A?style=flat-square&logo=pytorch&logoColor=white" alt="ML tools badge" />
-  <img src="https://img.shields.io/badge/Focus-REST%20APIs%20%7C%20Automation%20%7C%20NLP-0F172A?style=flat-square&logo=fastapi&logoColor=white" alt="Focus areas badge" />
+  <img src="https://img.shields.io/badge/Data%20Engineering-ETL%2FELT%20%7C%20SQL%20Routines%20%7C%20Data%20Quality-0F172A?style=flat-square&logo=databricks&logoColor=white" alt="Data engineering badge" />
+  <img src="https://img.shields.io/badge/Databases-MySQL%20%7C%20PostgreSQL%20%7C%20SQLite%20%7C%20Snowflake-0F172A?style=flat-square&logo=snowflake&logoColor=white" alt="Database badge" />
+  <img src="https://img.shields.io/badge/Architecture-APIs%20%7C%20CI%2FCD%20%7C%20Cloud%20%7C%20Linux-0F172A?style=flat-square&logo=linux&logoColor=white" alt="Architecture badge" />
 </p>
 
 ## GitHub Snapshot
@@ -90,28 +118,38 @@ My work sits at the intersection of backend engineering, automation, analytics, 
 <table>
   <tr>
     <td width="50%">
-      <strong>MTR-Framework</strong><br />
-      Private case study for a Python package that measures and tracks carbon emissions from deep learning workflows using runtime metrics and regional carbon-intensity APIs.
+      <strong>Carbon Emissions Tracking Pipeline</strong><br />
+      Private UBC capstone case study with ALS Geoanalytics: a Dockerized Python pipeline for measuring, aggregating, and reporting carbon emissions from PyTorch training workflows.
     </td>
     <td width="50%">
-      <strong><a href="https://github.com/OAOverflowAnalytics/CSEC-IT-RAG">CSEC-IT-RAG</a></strong><br />
-      RAG application built to help students understand CSEC Information Technology concepts with separate frontend and backend services and local Ollama-based model support.
+      <strong><a href="https://github.com/SimplyTim/Credit-Card-Default-Predictor">Credit Card Default Predictor</a></strong><br />
+      End-to-end data pipeline and ensemble modeling project for predicting credit card default risk from roughly 30,000 historical records.
     </td>
   </tr>
   <tr>
     <td width="50%">
       <strong><a href="https://github.com/UBC-MDS/dsresumatch">DSResuMatch</a></strong><br />
-      Python package for comparing resumes and job descriptions through section extraction and keyword relevance scoring.
+      Open-source Python package that extracts resume and job description sections, structures unstructured text, and scores keyword relevance.
     </td>
     <td width="50%">
-      <strong><a href="https://project-bloodline.web.app/">Project Bloodline</a></strong><br />
-      Progressive Web Application built with Angular and Flask to encourage blood donation through mobile-ready, REST-backed workflows.
+      <strong><a href="https://github.com/UBC-MDS/wine_quality_predictor_group1">Wine Quality Predictor</a></strong><br />
+      Reproducible ML pipeline for structured data ingestion, preprocessing, validation, and model benchmarking.
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <strong><a href="https://github.com/SimplyTim/Credit-Card-Default-Predictor">Credit Card Default Predictor</a></strong><br />
-      Ensemble modeling project for predicting credit card default risk from historical payment behavior.
+      <strong><a href="https://project-bloodline.web.app/">Project Bloodline</a></strong><br />
+      Progressive Web Application built with Angular and Flask to encourage blood donation through mobile-ready, REST-backed workflows.
+    </td>
+    <td width="50%">
+      <strong><a href="https://github.com/OAOverflowAnalytics/CariVoice">CariVoice</a></strong><br />
+      AI-assisted transcription and image-supported storytelling system for Caribbean folklore stories and plays.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <strong><a href="https://youtu.be/JDTCNuB09mc">Robotic Arm Automation</a></strong><br />
+      ROS and Gazebo simulation project using a Mecademic500 arm for precise pick-and-place operations.
     </td>
     <td width="50%">
       <strong><a href="https://github.com/SimplyTim/NIH-Chest-XRay-Classifier">NIH Chest X-Ray Classifier</a></strong><br />
@@ -120,10 +158,23 @@ My work sits at the intersection of backend engineering, automation, analytics, 
   </tr>
 </table>
 
-## Education
+## Experience Snapshot
 
-- M.Sc. in Data Science, University of British Columbia, 2025
-- B.Sc. in Computer Science, First Class Honours, University of the West Indies, 2021
+- AI Content Development Assistant, Ministry of Education, Apr 2026 - Present
+- AI Data Reviewer, DataAnnotation, Jul 2025 - Present
+- Data Engineer / Data Science Intern, ALS Geoanalytics, Apr 2025 - Jul 2025
+- Digital Transformation Analyst, Ministry of Digital Transformation, Sep 2021 - Aug 2024
+- IT Intern / Software Engineer, Republic Bank ITMD, Jun 2020 - Aug 2020
+
+## Education & Certifications
+
+- M.Sc. Data Science, University of British Columbia, 2025, GPA: 4.33
+- B.Sc. Computer Science, First Class Honours, University of the West Indies, 2021, GPA: 4.23
+- Huawei Seeds for the Future Internship Programme, 2020
+- Project Management Fundamentals & Applications, 2023
+- Create Machine Learning Models in Microsoft Azure, 2024
+- IBM Generative AI: Introduction and Applications, 2024
+- IBM Generative AI: Prompt Engineering Basics, 2024
 
 ## Let's Connect
 
@@ -137,9 +188,4 @@ My work sits at the intersection of backend engineering, automation, analytics, 
   <a href="https://github.com/SimplyTim">
     <img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub follow" />
   </a>
-</p>
-
-<p align="center">
-  <em>"Nothing is more creative... nor destructive... than a brilliant mind with a purpose."</em><br />
-  <sub>- Dan Brown</sub>
 </p>
